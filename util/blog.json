@@ -1,0 +1,505 @@
+[
+        {
+            "id": 0,
+            "title": "Pradhan Mantri Fasal Bima Yojana (PMFBY)",
+            "img": "pmby.png",
+            "category": "Wheat",
+            "author": "Government of India",
+            "date": "25 April 2024",
+            "avatar": "avatar-01.png",
+            "articleUrl": "https://pmfby.gov.in/aboutus",
+            "duration": 10
+        },
+        {
+            "id": 1,
+            "title": "Pradhan Mantri Fasal Bima Yojana (PMFBY)",
+            "img": "pmby.png",
+            "category": "Wheat",
+            "author": "Government of India",
+            "date": "25 April 2024",
+            "avatar": "avatar-01.png",
+            "articleUrl": "https://pmfby.gov.in/aboutus",
+            "duration": 10
+        },
+        {
+            "id": 2,
+            "title": "Agriculture Insurance Company of India Limited (AIC)",
+            "img": "aic.png",
+            "category": "Rice",
+            "author": "AIC",
+            "date": "12 March 2024",
+            "avatar": "avatar-02.png",
+            "articleUrl": "https://www.aicofindia.com/in-house-products",
+            "duration": 8
+        },
+        {
+            "id": 3,
+            "title": "National Bank for Agriculture and Rural Development (NABARD)",
+            "img": "nabard.jpeg",
+            "category": "Sugarcane",
+            "author": "NABARD",
+            "date": "5 May 2024",
+            "avatar": "avatar-03.png",
+            "articleUrl": "https://www.nabard.org/",
+            "duration": 15
+        },
+        {
+            "id": 4,
+            "title": "Insurance Regulatory and Development Authority of India (IRDAI)",
+            "img": "irdai.jpg",
+            "category": "Cotton",
+            "author": "IRDAI",
+            "date": "18 June 2024",
+            "avatar": "avatar-04.png",
+            "articleUrl": "https://irdai.gov.in/list-of-life-insurers1",
+            "duration": 12
+        },
+        {
+            "id": 5,
+            "title": "Ministry of Agriculture & Farmers Welfare, Government of India",
+            "img": "imoaff.jpeg",
+            "category": "Pulses",
+            "author": "Agricoop",
+            "date": "9 August 2024",
+            "avatar": "avatar-05.png",
+            "articleUrl": "https://agriwelfare.gov.in/en/FarmWelfare",
+            "duration": 7
+        },
+        {
+            "id": 6,
+            "title": "SBI General Insurance",
+            "img": "sbii.png",
+            "category": "Maize",
+            "author": "SBI",
+            "date": "22 October 2024",
+            "avatar": "avatar-06.png",
+            "articleUrl": "https://www.sbigeneral.in/pradhan-mantri-fasal-bima-yojna",
+            "duration": 18
+        },
+        {
+            "id": 7,
+            "title": "ICICI Lombard General Insurance",
+            "img": "icici.jpg",
+            "category": "Vegetables",
+            "author": "ICICI",
+            "date": "15 September 2024",
+            "avatar": "avatar-07.png",
+            "articleUrl": "https://www.icicilombard.com/rural-insurance/agriculture-insurance",
+            "duration": 13
+        },
+        {
+            "id": 8,
+            "title": "HDFC ERGO General Insurance",
+            "img": "hdfc-insurance.jpeg",
+            "category": "Fruits",
+            "author": "HDFC",
+            "date": "7 July 2024",
+            "avatar": "avatar-08.png",
+            "articleUrl": "https://www.hdfcergo.com/pmfby-rabi-2024/pradhan-mantri-fasal-bima-yojana",
+            "duration": 9
+        },
+        {
+            "id": 9,
+            "title": "IFFCO Tokio General Insurance",
+            "img": "iffco.png",
+            "category": "Soybean",
+            "author": "IFFCO",
+            "date": "30 November 2024",
+            "avatar": "avatar-09.png",
+            "articleUrl": "https://www.iffcotokio.co.in/",
+            "duration": 11
+        },
+        {
+            "id": 10,
+            "title": "Bajaj Allianz General Insurance",
+            "img": "bajaj.png",
+            "category": "Millets",
+            "author": "Bajaj",
+            "date": "2 December 2024",
+            "avatar": "avatar-10.png",
+            "articleUrl": "https://www.bajajallianz.com/pradhan-mantri-fasal-bima-yojana.html?utm_source=GoogleBrandBagic&param1=Enhanced_Sitelink&param2=Bajaj_Allianz_General_Insurance+Exact&param3=bajaj%20allianz%20general%20insurance&utm_content=SEM&gad_source=1&gclid=Cj0KCQjwrKu2BhDkARIsAD7GBotSH7hhKsHbl_lFiFLqpc9TMSdPt_hnmVF-Gaq3MxnFMoc--r5Zmc4aAkBmEALw_wcB&gclsrc=aw.ds",
+            "duration": 6
+        },
+        {
+            "id": 11,
+            "title": "Cropin Digital Solutions for Crop Insurance Providers",
+            "img": "cropin.png",
+            "category": "Potato",
+            "author": "Cropin",
+            "date": "11 January 2024",
+            "avatar": "avatar-11.png",
+            "articleUrl": "https://www.cropin.com/segments/crop-insurance",
+            "duration": 17
+        },
+    
+    {
+        "id": 12,
+        "title": "Virtual Reality: Shaping the Future",
+        "img": "img-12.png",
+        "category": "Technology",
+        "author": "Ethan H.",
+        "date": "14 February 2024",
+        "avatar": "avatar-01.png",
+        "duration": 17
+    },
+    {
+        "id": 13,
+        "title": "The Intersection of Gaming and Education",
+        "img": "img-13.png",
+        "category": "Gaming",
+        "author": "Ava B.",
+        "date": "25 March 2024",
+        "avatar": "avatar-02.png",
+        "duration": 10
+    },
+    {
+        "id": 14,
+        "title": "The Psychology of Gaming Addiction in recent years",
+        "img": "img-14.png",
+        "category": "Health",
+        "author": "William G.",
+        "date": "28 April 2024",
+        "avatar": "avatar-03.png",
+        "duration": 8
+    },
+    {
+        "id": 15,
+        "title": "Virtual Reality in Education: Future Prospects",
+        "img": "img-15.png",
+        "category": "Education",
+        "author": "Emma D.",
+        "date": "30 May 2024",
+        "avatar": "avatar-04.png",
+        "duration": 12
+    },
+    {
+        "id": 16,
+        "title": "The Future of Console Gaming Platforms",
+        "img": "img-16.png",
+        "category": "Gaming",
+        "author": "James F.",
+        "date": "3 June 2024",
+        "avatar": "avatar-05.png",
+        "duration": 15
+    },
+    {
+        "id": 17,
+        "title": "Gaming and Mental Health: An Exploratory Study",
+        "img": "img-17.png",
+        "category": "Health",
+        "author": "Charlotte H.",
+        "date": "6 July 2024",
+        "avatar": "avatar-06.png",
+        "duration": 7
+    },
+    {
+        "id": 18,
+        "title": "The Evolution of Mobile Gaming: Past, Present, and Future",
+        "img": "img-18.png",
+        "category": "Gaming",
+        "author": "Owen I.",
+        "date": "9 August 2024",
+        "avatar": "avatar-07.png",
+        "duration": 13
+    },
+    {
+        "id": 19,
+        "title": "The Impact of Augmented Reality on Gaming",
+        "img": "img-19.png",
+        "category": "Technology",
+        "author": "Grace J.",
+        "date": "12 September 2024",
+        "avatar": "avatar-08.png",
+        "duration": 9
+    },
+    {
+        "id": 20,
+        "title": "Exploring the Ethics of Video Game Development",
+        "img": "img-20.png",
+        "category": "Gaming",
+        "author": "Logan K.",
+        "date": "15 October 2024",
+        "avatar": "avatar-09.png",
+        "duration": 18
+    },
+    {
+        "id": 21,
+        "title": "Gaming and Social Interaction: A Psychological Perspective",
+        "img": "img-21.png",
+        "category": "Psychology",
+        "author": "Zoe L.",
+        "date": "18 November 2024",
+        "avatar": "avatar-10.png",
+        "duration": 6
+    },
+    {
+        "id": 22,
+        "title": "The Rise of Indie Game Development",
+        "img": "img-22.png",
+        "category": "Gaming",
+        "author": "Jacob M.",
+        "date": "21 December 2024",
+        "avatar": "avatar-11.png",
+        "duration": 14
+    },
+    {
+        "id": 23,
+        "title": "The Role of Women in the Gaming Industry",
+        "img": "img-23.png",
+        "category": "Society",
+        "author": "Chloe N.",
+        "date": "24 January 2025",
+        "avatar": "avatar-01.png",
+        "duration": 11
+    },
+    {
+        "id": 24,
+        "title": "The Psychology of Video Game Design",
+        "img": "img-24.png",
+        "category": "Psychology",
+        "author": "Patrick O.",
+        "date": "27 February 2025",
+        "avatar": "avatar-02.png",
+        "duration": 16
+    },
+    {
+        "id": 25,
+        "title": "Blockchain Technology in Gaming",
+        "img": "img-25.png",
+        "category": "Technology",
+        "author": "Quinn P.",
+        "date": "1 March 2025",
+        "avatar": "avatar-03.png",
+        "duration": 19
+    },
+    {
+        "id": 26,
+        "title": "The Future of Cloud Gaming",
+        "img": "img-26.png",
+        "category": "Technology",
+        "author": "Rebecca Q.",
+        "date": "4 April 2025",
+        "avatar": "avatar-04.png",
+        "duration": 7
+    },
+    {
+        "id": 27,
+        "title": "Gaming and Its Influence on Decision Making",
+        "img": "img-27.png",
+        "category": "Psychology",
+        "author": "Samuel R.",
+        "date": "7 May 2025",
+        "avatar": "avatar-05.png",
+        "duration": 10
+    },
+    {
+        "id": 28,
+        "title": "Exploring the Dark Side of Online Gaming",
+        "img": "img-28.png",
+        "category": "Gaming",
+        "author": "Tiffany S.",
+        "date": "10 June 2025",
+        "avatar": "avatar-06.png",
+        "duration": 13
+    },
+    {
+        "id": 29,
+        "title": "Gaming and Learning: The Educational Value of Play",
+        "img": "img-29.png",
+        "category": "Education",
+        "author": "Ulysses T.",
+        "date": "13 July 2025",
+        "avatar": "avatar-07.png",
+        "duration": 8
+    },
+    {
+        "id": 30,
+        "title": "Virtual Reality Gaming: Past, Present, and Future",
+        "img": "img-30.png",
+        "category": "Gaming",
+        "author": "Victoria U.",
+        "date": "16 August 2025",
+        "avatar": "avatar-08.png",
+        "duration": 11
+    },
+    {
+        "id": 31,
+        "title": "The Future of Storytelling in Video Games",
+        "img": "img-31.png",
+        "category": "Gaming",
+        "author": "William V.",
+        "date": "19 September 2025",
+        "avatar": "avatar-09.png",
+        "duration": 15
+    },
+    {
+        "id": 32,
+        "title": "The Impact of Gaming on Cognitive Development",
+        "img": "img-32.png",
+        "category": "Psychology",
+        "author": "Xavier W.",
+        "date": "22 October 2025",
+        "avatar": "avatar-10.png",
+        "duration": 9
+    },
+    {
+        "id": 33,
+        "title": "Artificial Intelligence in Game Design",
+        "img": "img-33.png",
+        "category": "Technology",
+        "author": "Yvonne X.",
+        "date": "25 November 2025",
+        "avatar": "avatar-11.png",
+        "duration": 12
+    },
+    {
+        "id": 34,
+        "title": "Gaming and Social Responsibility",
+        "img": "img-34.png",
+        "category": "Society",
+        "author": "Zack Y.",
+        "date": "28 December 2025",
+        "avatar": "avatar-01.png",
+        "duration": 7
+    },
+    {
+        "id": 35,
+        "title": "The Psychology of In-Game Purchases",
+        "img": "img-35.png",
+        "category": "Psychology",
+        "author": "Alice Z.",
+        "date": "31 January 2026",
+        "avatar": "avatar-02.png",
+        "duration": 14
+    },
+    {
+        "id": 36,
+        "title": "The Evolution of Storytelling in Gaming",
+        "img": "img-36.png",
+        "category": "Gaming",
+        "author": "Brandon A.",
+        "date": "3 March 2026",
+        "avatar": "avatar-03.png",
+        "duration": 10
+    },
+    {
+        "id": 37,
+        "title": "Ethical Considerations in Video Game Development",
+        "img": "thumb-01.png",
+        "category": "Ethics",
+        "author": "Bella B.",
+        "date": "6 April 2026",
+        "avatar": "avatar-04.png",
+        "duration": 18
+    },
+    {
+        "id": 38,
+        "title": "The Impact of Gaming on Social Skills",
+        "img": "thumb-02.png",
+        "category": "Society",
+        "author": "Charlie C.",
+        "date": "9 May 2026",
+        "avatar": "avatar-05.png",
+        "duration": 11
+    },
+    {
+        "id": 39,
+        "title": "Virtual Reality Gaming and Physical Health",
+        "img": "thumb-03.png",
+        "category": "Health",
+        "author": "Daisy D.",
+        "date": "12 June 2026",
+        "avatar": "avatar-06.png",
+        "duration": 16
+    },
+    {
+        "id": 40,
+        "title": "The Role of Sound Design in Video Games",
+        "img": "thumb-04.png",
+        "category": "Gaming",
+        "author": "Elijah E.",
+        "date": "15 July 2026",
+        "avatar": "avatar-07.png",
+        "duration": 9
+    },
+    {
+        "id": 41,
+        "title": "The Future of Mobile Gaming Apps",
+        "img": "thumb-05.png",
+        "category": "Gaming",
+        "author": "Fiona F.",
+        "date": "18 August 2026",
+        "avatar": "avatar-08.png",
+        "duration": 12
+    },
+    {
+        "id": 42,
+        "title": "The Connection Between Gaming and Creativity",
+        "img": "thumb-06.png",
+        "category": "Creativity",
+        "author": "George G.",
+        "date": "21 September 2026",
+        "avatar": "avatar-09.png",
+        "duration": 7
+    },
+    {
+        "id": 43,
+        "title": "The Evolution of Game Controllers",
+        "img": "thumb-07.png",
+        "category": "Technology",
+        "author": "Hannah H.",
+        "date": "24 October 2026",
+        "avatar": "avatar-10.png",
+        "duration": 10
+    },
+    {
+        "id": 44,
+        "title": "The Rise of Cloud-Based Gaming Services",
+        "img": "thumb-08.png",
+        "category": "Technology",
+        "author": "Isaac I.",
+        "date": "27 November 2026",
+        "avatar": "avatar-11.png",
+        "duration": 15
+    },
+    {
+        "id": 45,
+        "title": "The Future of Artificial Intelligence in Gaming",
+        "img": "thumb-09.png",
+        "category": "Technology",
+        "author": "Jack J.",
+        "date": "30 December 2026",
+        "avatar": "avatar-01.png",
+        "duration": 8
+    },
+    {
+        "id": 46,
+        "title": "Gaming and Cognitive Enhancement",
+        "img": "thumb-010.png",
+        "category": "Psychology",
+        "author": "Kate K.",
+        "date": "2 January 2027",
+        "avatar": "avatar-02.png",
+        "duration": 11
+    },
+    {
+        "id": 47,
+        "title": "The Impact of Gaming on Problem-Solving Skills",
+        "img": "thumb-011.png",
+        "category": "Education",
+        "author": "Liam L.",
+        "date": "5 February 2027",
+        "avatar": "avatar-03.png",
+        "duration": 14
+    },
+    {
+        "id": 48,
+        "title": "Gaming and Its Effect on Neuroplasticity",
+        "img": "thumb-012.png",
+        "category": "Science",
+        "author": "Mia M.",
+        "date": "8 March 2027",
+        "avatar": "avatar-04.png",
+        "duration": 9
+    }
+]

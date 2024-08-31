@@ -1,0 +1,116 @@
+{
+    "Rice": {
+        "Type of Crop": ["Kharif", "Rabi"],
+        "Techniques Used": ["Transplantation technique", "Japanese Transplantation technique", "New SRI technique"],
+        "Varieties": ["Aman", "Sali", "Afghani", "Aus", "Boro", "Palua"],
+        "Temperature": "~24°C",
+        "Rainfall": "~150 cm",
+        "Soil type": ["Clay", "Loamy"],
+        "Major Producers": ["West Bengal", "Uttar Pradesh", "Andhra Pradesh", "Punjab", "Bihar", "Orissa", "Chhattisgarh", "Assam", "Tamil Nadu", "Haryana"],
+        "Highest Producer": "West Bengal",
+        "Highest per Hectare Yield": "Punjab",
+        "Research Centre": "Cuttack, Odisha",
+        "Highest Producing Country": "China"
+    },
+    "Cotton": {
+        "Type of Crop": "Kharif",
+        "Varieties": ["Long Staple", "Medium Staple", "Short Staple"],
+        "Temperature": "21-30°C",
+        "Rainfall": "50-100 cm",
+        "Soil type": "Black soil (Highly water retentive soil)",
+        "Major Producers": ["Gujarat", "Maharashtra", "Andhra Pradesh", "Haryana", "Madhya Pradesh", "Punjab", "Rajasthan", "Karnataka", "Tamil Nadu", "Orissa"],
+        "Highest Producer": "Gujarat (According to the 2015 report)",
+        "Research Centre": "Nagpur, Maharashtra",
+        "Highest Producing Country": "China"
+    },
+    "Jute": {
+        "Type of Crop": "Zaid",
+        "Varieties": ["White Jute", "Tossa Jute"],
+        "Temperature": "24-35°C",
+        "Rainfall": "125-200 cm",
+        "Soil type": ["Sandy Loam", "Clay Loam"],
+        "Major Producers": ["West Bengal", "Bihar", "Assam", "Andhra Pradesh", "Orissa", "Meghalaya", "Nagaland", "Tripura", "Uttar Pradesh"],
+        "Highest Producer": "West Bengal",
+        "Highest per Hectare Yield": "West Bengal",
+        "Research Centre": ["Kolkata", "Nilgunj, West Bengal"],
+        "Highest Producing Country": "India (but highest exporter is Bangladesh)"
+    },
+    "Sugarcane": {
+        "Type of Crop": ["Kharif", "Rabi"],
+        "Temperature": "20-26°C",
+        "Rainfall": "75-150 cm",
+        "Soil type": ["Clayey Loamy Soil", "Black Cotton Soil", "Red Loamy Soil", "Brown Loamy Soil"],
+        "Major Producers": ["Uttar Pradesh", "Maharashtra", "Karnataka", "Tamil Nadu", "Andhra Pradesh", "Bihar", "Gujarat", "Haryana", "Uttarakhand", "Punjab"],
+        "Highest Producer": "Uttar Pradesh",
+        "Highest per Hectare Yield": "Tamil Nadu",
+        "Research Centre": "Lucknow",
+        "Highest Producing Country": "Brazil"
+    },
+    "Tea": {
+        "Temperature": "20-30°C",
+        "Rainfall": "150-300 cm",
+        "Soil type": "Loamy soil which is acidic in nature and rich in organic matter",
+        "Major Producers": ["Assam", "Darjeeling (West Bengal)", "Meghalaya", "Kerala", "Himachal Pradesh", "Tamil Nadu", "Karnataka"],
+        "Highest Producer": "Assam",
+        "Research Centre": "Tocklai, Assam",
+        "Highest Producing Country": "China"
+    },
+    "Coffee": {
+        "Varieties": ["Arabica", "Robusta"],
+        "Temperature": "16-28°C",
+        "Rainfall": "150-250 cm",
+        "Soil type": "Well-drained forest loam",
+        "Major Producers": ["Karnataka", "Tamil Nadu", "Kerala", "Andhra Pradesh", "Telangana", "Odisha", "Assam", "Meghalaya", "Arunachal Pradesh", "Manipur", "Nagaland"],
+        "Highest Producer": "Karnataka",
+        "Highest Producing Country": "Brazil"
+    },
+
+    "Potato": {
+        "Type of Crop": ["Rabi", "Kharif"],
+        "Varieties": ["Kufri Pukhraj", "Kufri Jyoti", "Kufri Bahar", "Kufri Sindhuri"],
+        "Temperature": "15-20°C",
+        "Rainfall": "120-150 cm",
+        "Soil type": ["Well-drained Sandy Loam", "Clay Loam"],
+        "Major Producers": ["Uttar Pradesh", "West Bengal", "Bihar", "Gujarat", "Madhya Pradesh", "Punjab"],
+        "Highest Producer": "Uttar Pradesh",
+        "Highest per Hectare Yield": "Punjab",
+        "Research Centre": "Shimla, Himachal Pradesh",
+        "Highest Producing Country": "China"
+    },
+    "Corn": {
+        "Type of Crop": ["Kharif", "Rabi"],
+        "Varieties": ["Dent Corn", "Flint Corn", "Popcorn", "Sweet Corn"],
+        "Temperature": "21-27°C",
+        "Rainfall": "50-75 cm",
+        "Soil type": ["Well-drained Loamy Soil", "Sandy Loam"],
+        "Major Producers": ["Karnataka", "Madhya Pradesh", "Uttar Pradesh", "Andhra Pradesh", "Rajasthan", "Tamil Nadu"],
+        "Highest Producer": "Karnataka",
+        "Highest per Hectare Yield": "Tamil Nadu",
+        "Research Centre": "Hyderabad, Telangana",
+        "Highest Producing Country": "United States"
+    },
+    "Tomato": {
+        "Type of Crop": "Kharif",
+        "Varieties": ["Pusa Ruby", "Arka Meghali", "Roma", "Marglobe", "Arka Vikas"],
+        "Temperature": "20-24°C",
+        "Rainfall": "60-100 cm",
+        "Soil type": ["Well-drained Sandy Loam", "Red Loamy Soil"],
+        "Major Producers": ["Andhra Pradesh", "Maharashtra", "Karnataka", "Madhya Pradesh", "Tamil Nadu", "Odisha"],
+        "Highest Producer": "Andhra Pradesh",
+        "Highest per Hectare Yield": "Karnataka",
+        "Research Centre": "Bangalore, Karnataka",
+        "Highest Producing Country": "China"
+    },
+    "Onion": {
+        "Type of Crop": ["Rabi", "Kharif"],
+        "Varieties": ["N-53", "Agrifound Light Red", "Pusa Red", "Arka Kalyan"],
+        "Temperature": "12-27°C",
+        "Rainfall": "75-100 cm",
+        "Soil type": ["Well-drained Loamy Soil", "Alluvial Soil"],
+        "Major Producers": ["Maharashtra", "Karnataka", "Gujarat", "Bihar", "Madhya Pradesh", "Rajasthan"],
+        "Highest Producer": "Maharashtra",
+        "Highest per Hectare Yield": "Gujarat",
+        "Research Centre": "Nashik, Maharashtra",
+        "Highest Producing Country": "China"
+    }
+}
