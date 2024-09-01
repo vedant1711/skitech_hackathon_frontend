@@ -9,11 +9,11 @@ export default async function Login() {
                     <div className="container px-4">
                         <div className="grid grid-cols-1 lg:grid-cols-2 items-start">
                             <div className="hidden lg:grid grid-cols-2 gap-4 items-stretch max-w-[580px]">
-                                <img className="rounded-3xl w-full hover-up" src="/assets/imgs/pages/img-32.png" alt="" />
-                                <img className="rounded-3xl w-full hover-up" src="/assets/imgs/pages/img-33.png" alt="" />
-                                <img className="rounded-3xl w-full hover-up" src="/assets/imgs/pages/img-34.png" alt="" />
-                                <img className="rounded-3xl w-full hover-up" src="/assets/imgs/pages/img-35.png" alt="" />
-                                <img className="rounded-3xl w-full hover-up col-span-2" src="/assets/imgs/pages/img-36.png" alt="" />
+                                <img className="rounded-3xl w-full hover-up" src="/assets/imgs/pages/signup1.jpg" alt="" />
+                                <img className="rounded-3xl w-full hover-up" src="/assets/imgs/pages/signup2.jpg" alt="" />
+                                <img className="rounded-3xl w-full hover-up" src="/assets/imgs/pages/signup3.jpg" alt="" />
+                                <img className="rounded-3xl w-full hover-up" src="/assets/imgs/pages/signup4.jpg" alt="" />
+                                <img className="rounded-3xl w-full hover-up col-span-2" src="/assets/imgs/pages/signup5.jpg" alt="" />
                             </div>
                             <div className="mr-12 lg:pl-12">
                                 <span className="h-12 px-7 py-3.5 bg-neutral-0 dark:bg-neutral-dark-0 rounded-3xl border border-neutral-300 dark:border-neutral-dark-300 text-neutral-700 dark:text-neutral-dark-700 text-base font-bold leading-none mb-4 inline-block">
