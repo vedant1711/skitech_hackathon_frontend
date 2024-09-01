@@ -117,7 +117,7 @@ export default async function Search() {
                                                 May 20, 2024 - 4 mins read</div>
                                         </div>
                                     </div>
-                                    <h3><Link className="text-neutral-950 dark:text-neutral-dark-950 text-xl font-bold leading-snug item-link" href="/single">Trends to Watch: Fashion Forecast for the Next Season</Link></h3>
+                                    <h3><Link className="text-neutral-950 dark:text-neutral-dark-950 text-xl font-bold leading-snug item-link" href="/single">Trends to Watch: RiceForecast for the Next Season</Link></h3>
                                 </div>
                             </div>
                             <div className="flex-col md:flex-row justify-start items-center gap-5 inline-flex hover-up border-2 bg-neutral-0 dark:bg-neutral-dark-0 border-neutral-300 dark:border-neutral-dark-300 rounded-3xl overflow-hidden w-full p-2">

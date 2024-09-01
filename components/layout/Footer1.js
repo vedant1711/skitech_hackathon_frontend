@@ -15,7 +15,7 @@ export default function Footer1() {
                                 </Link>
                             </h1>
                             <p className="font-medium text-neutral-950 dark:text-neutral-dark-950 mb-8 lg:mb-12 max-w-[350px]">
-                                It involves entrepreneurship, management, marketing, finance, and many other aspects. Businesses
+                                It contains the power of real-time insights, expert advice, and a thriving community of farmers like you! Businesses
                                 aim to generate
                             </p>
                             <div className="flex gap-2">
@@ -43,16 +43,16 @@ export default function Footer1() {
                                 <h6 className="text-base font-bold text-neutral-700 dark:text-neutral-dark-700 mb-2">Category</h6>
                                 <ul>
                                     <li className="footer-menu">
-                                        <Link href="/category" className="text-base font-regular text-neutral-950 dark:text-neutral-dark-950">Trending</Link>
+                                        <Link href="/category" className="text-base font-regular text-neutral-950 dark:text-neutral-dark-950">Wheat</Link>
                                     </li>
                                     <li className="footer-menu">
-                                        <Link href="/category-2" className="text-base font-regular text-neutral-950 dark:text-neutral-dark-950">Fashion</Link>
+                                        <Link href="/category-2" className="text-base font-regular text-neutral-950 dark:text-neutral-dark-950">Rice</Link>
                                     </li>
                                     <li className="footer-menu">
-                                        <Link href="/category-3" className="text-base font-regular text-neutral-950 dark:text-neutral-dark-950">Technology</Link>
+                                        <Link href="/category-3" className="text-base font-regular text-neutral-950 dark:text-neutral-dark-950">Cotton</Link>
                                     </li>
                                     <li className="footer-menu">
-                                        <Link href="/category-4" className="text-base font-regular text-neutral-950 dark:text-neutral-dark-950">Healthy</Link>
+                                        <Link href="/category-4" className="text-base font-regular text-neutral-950 dark:text-neutral-dark-950">Maize</Link>
                                     </li>
                                 </ul>
                             </div>
@@ -96,7 +96,7 @@ export default function Footer1() {
                         </div>
                     </div>
                     <div className="pt-8">
-                        <p className="text-sm text-neutral-700 dark:text-neutral-dark-700">© IDEKO 2024. Designed by <Link href="/https://alithemes.com" className="text-neutral-950 dark:text-neutral-dark-950">Alithemes</Link>
+                        <p className="text-sm text-neutral-700 dark:text-neutral-dark-700"> <Link href="/https://alithemes.com" className="text-neutral-950 dark:text-neutral-dark-950">Alithemes</Link>
                         </p>
                     </div>
                 </div>

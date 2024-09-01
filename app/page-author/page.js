@@ -65,7 +65,7 @@ export default async function Author() {
                                             <div className="justify-start items-center gap-5 inline-flex">
                                                 <Link href="/category" className="px-3 py-[8px] bg-neutral-200 dark:bg-neutral-dark-200 rounded-3xl border border-neutral-200 dark:border-neutral-dark-300 justify-center items-center gap-2.5 flex">
                                                     <div className="text-neutral-900 dark:text-neutral-dark-950 text-sm font-medium leading-none">
-                                                        Technology</div>
+                                                        Cotton</div>
                                                 </Link>
                                                 <div className="justify-start items-center gap-2 flex">
                                                     <div className="text-neutral-700 text-sm font-medium leading-none dark:text-neutral-dark-700">
@@ -146,7 +146,7 @@ export default async function Author() {
                                                         May 20, 2024 - 4 mins read</div>
                                                 </div>
                                             </div>
-                                            <h3><Link className="text-neutral-950 dark:text-neutral-dark-950 text-xl font-bold leading-snug item-link" href="/single">Trends to Watch: Fashion Forecast for the Next Season</Link>
+                                            <h3><Link className="text-neutral-950 dark:text-neutral-dark-950 text-xl font-bold leading-snug item-link" href="/single">Trends to Watch: RiceForecast for the Next Season</Link>
                                             </h3>
                                         </div>
                                     </div>
@@ -222,7 +222,7 @@ export default async function Author() {
                                         </Link>
                                     </h1>
                                     <p className="font-medium text-neutral-950 dark:text-neutral-dark-950 mb-8 lg:mb-12 max-w-[350px]">
-                                        It involves entrepreneurship, management, marketing, finance, and many other aspects.
+                                        It contains the power of real-time insights, expert advice, and a thriving community of farmers like you!
                                         Businesses aim to generate
                                     </p>
                                     <div className="flex gap-2">
@@ -317,7 +317,7 @@ export default async function Author() {
                                         <Link className="button-7 hover-up" href="/category">Health</Link>
                                         <Link className="button-7 hover-up" href="/category">Food</Link>
                                         <Link className="button-7 hover-up" href="/category">Travel</Link>
-                                        <Link className="button-7 hover-up" href="/category">Technology</Link>
+                                        <Link className="button-7 hover-up" href="/category">Cotton</Link>
                                         <Link className="button-7 hover-up" href="/category">Sports</Link>
                                     </div>
                                 </div>

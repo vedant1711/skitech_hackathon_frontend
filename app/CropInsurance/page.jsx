@@ -135,7 +135,7 @@ export default async function Category3() {
                                             <Link className="button-7 hover-up" href="/category">Health</Link>
                                             <Link className="button-7 hover-up" href="/category">Food</Link>
                                             <Link className="button-7 hover-up" href="/category">Travel</Link>
-                                            <Link className="button-7 hover-up" href="/category">Technology</Link>
+                                            <Link className="button-7 hover-up" href="/category">Cotton</Link>
                                             <Link className="button-7 hover-up" href="/category">Sports</Link>
                                         </div>
                                     </div>

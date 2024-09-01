@@ -366,7 +366,7 @@ export default function BlogDetails() {
                                             <div className="justify-start items-center gap-5 inline-flex">
                                                 <Link href="/category" className="px-3 py-[8px] bg-neutral-200 dark:bg-neutral-dark-200 rounded-3xl border border-neutral-200 dark:border-neutral-dark-300 justify-center items-center gap-2.5 flex">
                                                     <div className="text-neutral-900 dark:text-neutral-dark-950 text-sm font-medium leading-none">
-                                                        Trending</div>
+                                                        Wheat</div>
                                                 </Link>
                                                 <div className="justify-start items-center gap-2 flex">
                                                     <div className="text-neutral-700 text-sm font-medium leading-none dark:text-neutral-dark-700">
@@ -384,7 +384,7 @@ export default function BlogDetails() {
                                             <div className="justify-start items-center gap-5 inline-flex">
                                                 <Link href="/category" className="px-3 py-[8px] bg-neutral-200 dark:bg-neutral-dark-200 rounded-3xl border border-neutral-200 dark:border-neutral-dark-300 justify-center items-center gap-2.5 flex">
                                                     <div className="text-neutral-900 dark:text-neutral-dark-950 text-sm font-medium leading-none">
-                                                        Trending</div>
+                                                        Wheat</div>
                                                 </Link>
                                                 <div className="justify-start items-center gap-2 flex">
                                                     <div className="text-neutral-700 text-sm font-medium leading-none dark:text-neutral-dark-700">
@@ -402,7 +402,7 @@ export default function BlogDetails() {
                                             <div className="justify-start items-center gap-5 inline-flex">
                                                 <Link href="/category" className="px-3 py-[8px] bg-neutral-200 dark:bg-neutral-dark-200 rounded-3xl border border-neutral-200 dark:border-neutral-dark-300 justify-center items-center gap-2.5 flex">
                                                     <div className="text-neutral-900 dark:text-neutral-dark-950 text-sm font-medium leading-none">
-                                                        Trending</div>
+                                                        Wheat</div>
                                                 </Link>
                                                 <div className="justify-start items-center gap-2 flex">
                                                     <div className="text-neutral-700 text-sm font-medium leading-none dark:text-neutral-dark-700">
@@ -420,7 +420,7 @@ export default function BlogDetails() {
                                             <div className="justify-start items-center gap-5 inline-flex">
                                                 <Link href="/category" className="px-3 py-[8px] bg-neutral-200 dark:bg-neutral-dark-200 rounded-3xl border border-neutral-200 dark:border-neutral-dark-300 justify-center items-center gap-2.5 flex">
                                                     <div className="text-neutral-900 dark:text-neutral-dark-950 text-sm font-medium leading-none">
-                                                        Trending</div>
+                                                        Wheat</div>
                                                 </Link>
                                                 <div className="justify-start items-center gap-2 flex">
                                                     <div className="text-neutral-700 text-sm font-medium leading-none dark:text-neutral-dark-700">

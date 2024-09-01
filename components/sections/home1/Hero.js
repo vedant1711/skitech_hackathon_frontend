@@ -86,7 +86,7 @@ export default function Hero() {
                             </SwiperSlide>
                             <SwiperSlide className="swiper-slide hover-up">
                                 <div className="w-full h-52 relative rounded-3xl overflow-hidden">
-                                    <Link href="/category"><img className="left-0 top-0 absolute  rounded-3xl" alt="" src="/assets/imgs/pages/wheat.jpg" /></Link>
+                                    <Link href="/category"><img className="left-0 top-0 absolute  rounded-3xl" alt="" src="/assets/imgs/pages/Wheat.jpg" /></Link>
                                     <div className="px-[13px] py-[9px] left-[10px] top-[150px] absolute bg-neutral-0 dark:bg-neutral-dark-0 rounded-[26px] justify-center items-center gap-2.5 inline-flex">
                                         <Link href="/category" className="text-neutral-950 dark:text-neutral-dark-950 text-sm font-medium">Wheat</Link>
                                         <div className="w-[22px] h-[22px] relative">
