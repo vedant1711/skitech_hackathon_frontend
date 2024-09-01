@@ -23,9 +23,9 @@
         },
         {
             "id": 2,
-            "title": "Agriculture Insurance Company of India Limited (AIC)",
+            "title": "Potato Crop Insurance (AIC)",
             "img": "aic.png",
-            "category": "Rice",
+            "category": "Potato",
             "author": "AIC",
             "date": "12 March 2024",
             "avatar": "avatar-02.png",
@@ -34,26 +34,28 @@
         },
         {
             "id": 3,
-            "title": "National Bank for Agriculture and Rural Development (NABARD)",
-            "img": "nabard.jpeg",
-            "category": "Sugarcane",
-            "author": "NABARD",
+            "title": "Coconut Palm Insurance Scheme",
+            "img": "myscheme.png",
+            "category": "Coconut Palm",
+            "author": "myScheme",
             "date": "5 May 2024",
             "avatar": "avatar-03.png",
-            "articleUrl": "https://www.nabard.org/",
+            "articleUrl": "https://www.myscheme.gov.in/schemes/cpis",
             "duration": 15
         },
+        
         {
             "id": 4,
-            "title": "Insurance Regulatory and Development Authority of India (IRDAI)",
-            "img": "irdai.jpg",
-            "category": "Cotton",
-            "author": "IRDAI",
+            "title": "Weather based crop Insurance",
+            "img": "bajaj.png",
+            "category": "Weather",
+            "author": "Bajaj",
             "date": "18 June 2024",
             "avatar": "avatar-04.png",
-            "articleUrl": "https://irdai.gov.in/list-of-life-insurers1",
+            "articleUrl": "https://www.bajajallianz.com/weather-based-crop-insurance.html",
             "duration": 12
         },
+        
         {
             "id": 5,
             "title": "Ministry of Agriculture & Farmers Welfare, Government of India",
