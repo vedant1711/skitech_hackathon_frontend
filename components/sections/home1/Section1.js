@@ -9,7 +9,7 @@ export default function Section1() {
                     </h3>
                     {/*Post list 1*/}
                     <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-x-[30px] gap-y-[65px]">
-                        <BlogPost showItem={6} style={2} startFrom={12} toEnd={19} />
+                        {/* <BlogPost showItem={6} style={2} startFrom={12} toEnd={19} /> */}
                     </div>
                 </div>
             </section>

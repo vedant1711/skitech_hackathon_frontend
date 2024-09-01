@@ -18,12 +18,12 @@ export default function Section3() {
                             <BlogPost showItem={2} style={5} startFrom={36} toEnd={38} />
                         </div>
                         <div className="relative flex flex-col gap-4 mb-8 lg:mb-0">
-                            <BlogPost showItem={1} style={4} startFrom={14} toEnd={15} />
-                            <BlogPost showItem={2} style={5} startFrom={38} toEnd={40} />
+                            {/* <BlogPost showItem={1} style={4} startFrom={14} toEnd={15} />
+                            <BlogPost showItem={2} style={5} startFrom={38} toEnd={40} /> */}
                         </div>
                         <div className="relative flex flex-col gap-4 mb-8 lg:mb-0">
-                            <BlogPost showItem={1} style={4} startFrom={15} toEnd={16} />
-                            <BlogPost showItem={2} style={5} startFrom={40} toEnd={42} />
+                            {/* <BlogPost showItem={1} style={4} startFrom={15} toEnd={16} />
+                            <BlogPost showItem={2} style={5} startFrom={40} toEnd={42} /> */}
                         </div>
                     </div>
                 </div>

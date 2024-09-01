@@ -40,7 +40,7 @@ export default function Footer2() {
                         <div className="mb-8 lg:mb-4 lg:max-w-96">
                             <h1 className="mb-8">
                                 <a href="/">
-                                    <img src="assets/imgs/template/logo.svg" alt="logo" className="flex-shrink-0 relative dark:hidden" />
+                                    <img src="assets/imgs/template/image.png" alt="logo" className="flex-shrink-0 relative dark:hidden" />
                                     <img src="assets/imgs/template/logo-white.svg" alt="logo" className="flex-shrink-0 relative hidden dark:inline-block" />
                                 </a>
                             </h1>

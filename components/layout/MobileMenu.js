@@ -9,7 +9,7 @@ export default function MobileMenu({ isMobileMenu, handleMobileMenu }) {
                         <div className="flex flex-col h-full">
                             <h1 className="pt-2 pb-6">
                                 <Link href="/">
-                                    <img src="/assets/imgs/template/logo.svg" alt="logo" className="flex-shrink-0 relative dark:hidden" />
+                                    <img src="/assets/imgs/template/image.png" alt="logo" className="flex-shrink-0 relative dark:hidden" />
                                     <img src="/assets/imgs/template/logo-white.svg" alt="logo" className="flex-shrink-0 relative hidden dark:inline-block" />
                                 </Link>
                             </h1>
