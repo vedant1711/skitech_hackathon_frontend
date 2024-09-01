@@ -78,7 +78,7 @@ importers:
         specifier: ^0.244.0
         version: 0.244.0(react@18.2.0)
       next:
-        specifier: 14.2.7
+        specifier: latest
         version: 14.2.7(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
       next-themes:
         specifier: ^0.2.1
@@ -6122,7 +6122,7 @@ snapshots:
   postcss@8.4.31:
     dependencies:
       nanoid: 3.3.7
-      picocolors: 1.0.0
+      picocolors: 1.0.1
       source-map-js: 1.2.0
 
   postcss@8.4.42:

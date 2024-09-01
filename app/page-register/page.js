@@ -1,7 +1,33 @@
 'use client'
-
 import Layout from "@/components/layout/Layout"
-export default async function Register() {
+import { useEffect, useState } from "react";
+import {signupUser} from "../../util/helper"
+export default function Register() {
+    const [firstName, setFirstName] = useState("");
+    const [lastName, setLastName] = useState("");
+    const [contactNo, setContactNo] = useState("");
+    const [password, setPassword] = useState("");
+    const [error, setError] = useState(null);
+    const [success, setSuccess] = useState(false);
+
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+        setError(null);
+        setSuccess(false);
+
+        try {
+            const response = await signupUser({ firstName, lastName, contactNo, password });
+            if (response.success) {
+                setSuccess(true);
+            } else {
+                setError(response.message);
+            }
+        } catch (err) {
+            setError("An error occurred during signup.");
+        }
+    };
+    
+
     return (
         <>
             <Layout>
@@ -15,25 +41,49 @@ export default async function Register() {
                                 <h3 className="heading-3 mb-2">Create <span className="font-light">an Account</span></h3>
                                 <p className="text-neutral-700 dark:text-neutral-dark-700 mb-16 font-medium text-2xl">Create a new
                                     account and enjoy premium content</p>
-                                <form >
+                                <form onSubmit={handleSubmit}>
                                     <div className="grid md:grid-cols-2 gap-4 mb-4">
                                         <div className="form-group">
                                             <label htmlFor="last-name" className="input-label">First Name</label>
-                                            <input type="text" placeholder="First name" className="input-lg" />
-                                        </div>
+                                            <input
+                                                type="text"
+                                                id="first-name"
+                                                placeholder="First name"
+                                                className="input-lg"
+                                                value={firstName}
+                                                onChange={(e) => setFirstName(e.target.value)}
+                                            />                                        </div>
                                         <div className="form-group">
                                             <label htmlFor="last-name" className="input-label">Last Name</label>
-                                            <input type="text" placeholder="Last name" className="input-lg" />
-                                        </div>
+                                            <input
+                                                type="text"
+                                                id="last-name"
+                                                placeholder="Last name"
+                                                className="input-lg"
+                                                value={lastName}
+                                                onChange={(e) => setLastName(e.target.value)}
+                                            />                                        </div>
                                     </div>
                                     <div className="form-group mb-4">
                                         <label htmlFor="mobile" className="input-label">Contact No.</label>
-                                        <input type="number" placeholder="Contact No." className="input-lg" />
-                                    </div>
+                                        <input
+                                            type="number"
+                                            id="mobile"
+                                            placeholder="Contact No."
+                                            className="input-lg"
+                                            value={contactNo}
+                                            onChange={(e) => setContactNo(e.target.value)}
+                                        />                                    </div>
                                     <div className="form-group mb-4">
                                         <label htmlFor="password" className="input-label">Password</label>
-                                        <input type="password" placeholder="Password" className="input-lg" />
-                                    </div>
+                                        <input
+                                            type="password"
+                                            id="password"
+                                            placeholder="Password"
+                                            className="input-lg"
+                                            value={password}
+                                            onChange={(e) => setPassword(e.target.value)}
+                                        />                                    </div>
                                     <div className="form-group flex justify-between mb-4 mt-6">
                                         <div className="flex items-center mb-8">
                                             <input type="checkbox" id="save-info" className="w-4 h-4 accent-primary-light-950  bg-primary-light-950 text-neutral-0  rounded cursor-pointer mr-2" />
