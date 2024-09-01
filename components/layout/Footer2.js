@@ -4,14 +4,14 @@ export default function Footer2() {
         <>
             <footer className="w-full py-20 bg-neutral-200 dark:bg-neutral-dark-200 ">
                 {/*Newletter*/}
-                <div className="container px-4">
-                    {/* <div class="grid grid-cols-1 justify-between items-start md:grid-cols-2 md:gap-4 lg:gap-8 md:justify-items-end md:items-center mb-8 md:mb-12"> */}
+                {/* <div className="container px-4">
+                    <div class="grid grid-cols-1 justify-between items-start md:grid-cols-2 md:gap-4 lg:gap-8 md:justify-items-end md:items-center mb-8 md:mb-12">
                     <div className="flex flex-col md:flex-row justify-between md:items-end items-start mb-8 md:mb-20">
-                        <div className="pl-2 mb-8 md:mb-0 md:pl-0 md:max-w-[50%]">
+                        {/* {/* <div className="pl-2 mb-8 md:mb-0 md:pl-0 md:max-w-[50%]">
                             <h3 className="text-3xl md:text-4xl lg:text-6xl font-bold text-neutral-950 dark:text-neutral-dark-950 leading-tight">
                                 <span className="font-light">Subscribe to my weekly newsletter for priority</span> news, reviews and
-                                updates</h3>
-                        </div>
+                                updates</h3> */}
+                        {/* </div> 
                         <div className="mb-12 md:mb-0">
                             <form className="max-w-full overflow-hidden" action>
                                 <div className="flex flex-col md:flex-row mb-4 md:bg-neutral-0 dark:bg-neutral-dark-200 rounded-full p-1 md:border border-neutral-300 dark:border-neutral-dark-300">
@@ -32,7 +32,7 @@ export default function Footer2() {
                             </form>
                         </div>
                     </div>
-                </div>
+                </div> */} 
                 {/*Footer*/}
                 <div className="container px-4">
                     <div className="border-t border-neutral-950 dark:border-neutral-dark-500 pb-20 " />
@@ -45,8 +45,7 @@ export default function Footer2() {
                                 </a>
                             </h1>
                             <p className="font-medium text-neutral-950 dark:text-neutral-dark-950 mb-8 lg:mb-12 max-w-[350px]">
-                                It contains the power of real-time insights, expert advice, and a thriving community of farmers like you! Businesses
-                                aim to generate
+                                It contains the power of real-time insights, expert advice, and a thriving community of farmers like you! 
                             </p>
                             <div className="flex gap-2">
                                 <div className="w-12 h-12 rounded-[5px] flex justify-center items-center border border-neutral-300 dark:border-neutral-dark-300 cursor-pointer hover-up hover:bg-primary-light-200 dark:hover:bg-primary-dark-300">

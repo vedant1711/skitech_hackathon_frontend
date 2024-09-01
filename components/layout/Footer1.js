@@ -15,8 +15,7 @@ export default function Footer1() {
                                 </Link>
                             </h1>
                             <p className="font-medium text-neutral-950 dark:text-neutral-dark-950 mb-8 lg:mb-12 max-w-[350px]">
-                                It contains the power of real-time insights, expert advice, and a thriving community of farmers like you! Businesses
-                                aim to generate
+                                It contains the power of real-time insights, expert advice, and a thriving community of farmers like you! 
                             </p>
                             <div className="flex gap-2">
                                 <div className="w-12 h-12 rounded-[5px] flex justify-center items-center border border-neutral-300 dark:border-neutral-dark-300 cursor-pointer hover-up hover:bg-primary-light-200 dark:hover:bg-primary-dark-300">
