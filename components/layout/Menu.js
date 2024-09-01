@@ -45,20 +45,22 @@ export default function Menu() {
                     </ul>
                 </li> */}
                 <li className="relative group">
-                    <Link className="menu-item text-center" href="diseaseDetection">Disease Detection</Link>
+                    <Link className="menu-item text-center" href="commodityPrices">Commodity Price</Link>
                 </li>
                 <li className="relative group">
                     <Link className="menu-item text-center" href="cropInsurance">Insurance</Link>
                 </li>
-                <li className="relative group">
-                    <Link className="menu-item text-center" href="commodityPrices">Commodity Price</Link>
-                </li>
+                
                 <li className="relative group">
                     <Link className="menu-item text-center" href="/#">Get Recommendation</Link>
+                    
                     <ul className="z-100 absolute px-6 py-4 rounded-md left-4 bg-neutral-0 dark:bg-neutral-dark-0 min-w-48 shadow-sm mt-8 opacity-0 invisible group-hover:opacity-100 group-hover:visible group-hover:mt-4 transition-all duration-500">
                         <li><Link href="/recommendationPage" className="menu-sub-item">Crop</Link></li>
                         <li><Link href="/recommendationPage" className="menu-sub-item">Fertilizer</Link></li>
                     </ul>
+                </li>
+                <li className="relative group">
+                    <Link className="menu-item text-center" href="diseaseDetection">Disease Detection</Link>
                 </li>
      
                 {/* <li className="relative"><Link href="/page-contact" className="menu-item">Contact</Link></li> */}
