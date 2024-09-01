@@ -24,7 +24,7 @@ export default function Section2() {
                                     <Link className="text-center text-neutral-950 dark:text-neutral-dark-950 text-4xl font-bold" href="/author">Brooklyn Simmons</Link>
                                     <div className="text-center text-neutral-700 text-base font-medium leading-normal">Goods and
                                         services. It involves entrepreneurship, management, marketing, finance, and many other
-                                        aspects. Businesses aim to generate</div>
+                                        aspects.</div>
                                 </div>
                             </div>
                         </div>

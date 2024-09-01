@@ -4,7 +4,10 @@ export default function Section4() {
     return (
         <>
             <section className="relative py-20 lg:py-24">
-                <div className="container px-4">
+                <div>
+                    
+                </div>
+                {/* <div className="container px-4">
                     <div className="grid flex-col justify-center justify-items-center align-center mb-16">
                         <h3 className="heading-3 text-center mb-12 md:w-2/3 leading-tight"><span className="font-light">Subscribe to my
                             weekly newsletter for priority</span> news, reviews and updates</h3>
@@ -28,7 +31,7 @@ export default function Section4() {
                             </form>
                         </div>
                     </div>
-                </div>
+                </div> */}
             </section>
 
         </>
