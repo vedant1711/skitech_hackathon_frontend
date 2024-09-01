@@ -12,15 +12,17 @@
         },
         {
             "id": 1,
-            "title": "Pradhan Mantri Fasal Bima Yojana (PMFBY)",
-            "img": "pmby.png",
-            "category": "Wheat",
-            "author": "Government of India",
-            "date": "25 April 2024",
-            "avatar": "avatar-01.png",
-            "articleUrl": "https://pmfby.gov.in/aboutus",
-            "duration": 10
+            "title": "Coconut Palm Insurance Scheme",
+            "img": "myscheme.png",
+            "category": "Coconut Palm",
+            "author": "myScheme",
+            "date": "5 May 2024",
+            "avatar": "avatar-03.png",
+            "articleUrl": "https://www.myscheme.gov.in/schemes/cpis",
+            "description": "The Coconut Development Board covers 50%, the State Government 25%, and the farmer 25% of the total amount",
+            "duration": 15
         },
+        
         {
             "id": 2,
             "title": "Potato Crop Insurance (AIC)",
@@ -30,22 +32,13 @@
             "date": "12 March 2024",
             "avatar": "avatar-02.png",
             "articleUrl": "https://www.aicofindia.com/in-house-products",
+            "description": "This insurance covers costs from one week after planting until seven days before harvest.",
             "duration": 8
         },
-        {
-            "id": 3,
-            "title": "Coconut Palm Insurance Scheme",
-            "img": "myscheme.png",
-            "category": "Coconut Palm",
-            "author": "myScheme",
-            "date": "5 May 2024",
-            "avatar": "avatar-03.png",
-            "articleUrl": "https://www.myscheme.gov.in/schemes/cpis",
-            "duration": 15
-        },
+        
         
         {
-            "id": 4,
+            "id": 3,
             "title": "Weather based crop Insurance",
             "img": "bajaj.png",
             "category": "Weather",
@@ -53,30 +46,45 @@
             "date": "18 June 2024",
             "avatar": "avatar-04.png",
             "articleUrl": "https://www.bajajallianz.com/weather-based-crop-insurance.html",
+            "description": "The Farmer's share of the premium is 5% of the Sum Insured or the Actuarial Rate or whichever is less.",
             "duration": 12
         },
         
         {
-            "id": 5,
-            "title": "Ministry of Agriculture & Farmers Welfare, Government of India",
-            "img": "imoaff.jpeg",
-            "category": "Pulses",
-            "author": "Agricoop",
+            "id": 4,
+            "title": "Rythu Bima Scheme",
+            "img": "myscheme.png",
+            "category": "Natural calamities",
+            "author": "myscheme",
             "date": "9 August 2024",
             "avatar": "avatar-05.png",
-            "articleUrl": "https://agriwelfare.gov.in/en/FarmWelfare",
+            "articleUrl": "https://www.myscheme.gov.in/schemes/rythu-bima",
+            "description": " Telangana government offers a 75% subsidy on premiums, and farmers can claim compensation equal to the sum insured for crop damage.",
             "duration": 7
         },
         {
-            "id": 6,
-            "title": "SBI General Insurance",
-            "img": "sbii.png",
-            "category": "Maize",
-            "author": "SBI",
+            "id": 5,
+            "title": "Rainfall Insurance",
+            "img": "aic.png",
+            "category": "Rainfall",
+            "author": "Aic",
             "date": "22 October 2024",
             "avatar": "avatar-06.png",
-            "articleUrl": "https://www.sbigeneral.in/pradhan-mantri-fasal-bima-yojna",
+            "articleUrl": "https://www.aicofindia.com/in-house-products",
+            "description": "Rainfall insurance provides effective risk management aid to those growers likely to be impacted by adverse rainfall incidence.",
             "duration": 18
+        },
+        {
+            "id": 6,
+            "title": "Pradhan Mantri Fasal Bima Yojana (PMFBY)",
+            "img": "pmby.png",
+            "category": "Wheat",
+            "author": "Government of India",
+            "date": "25 April 2024",
+            "avatar": "avatar-01.png",
+            "articleUrl": "https://pmfby.gov.in/aboutus",
+            "description": "A secure, integrated ecosystem providing comprehensive data access to farmers, government, insurers, bankers, and community stakeholders.",
+            "duration": 10
         },
         {
             "id": 7,

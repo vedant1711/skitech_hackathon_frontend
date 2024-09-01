@@ -14,7 +14,7 @@ export default async function Category3() {
                             <div className="flex flex-col md:flex-row justify-between gap-[58px]">
                                 <div className="flex flex-col gap-16">
                                     <div className="grid grid-cols-1 gap-y-[65px] max-w-[850px]">
-                                        <BlogPost showItem={6} style={9} startFrom={1} toEnd={12} showPagination={true} />
+                                        <BlogPost showItem={6} style={9} startFrom={1} toEnd={6}  />
                                     </div>
                                     {/* 1,3,6,7,9 */}
                                 </div>
@@ -130,13 +130,13 @@ export default async function Category3() {
                                     <div className="flex flex-col gap-4">
                                         <h4 className="text-2xl text-neutral-950 dark:text-neutral-dark-950 font-bold">Explore <span className="font-light">Categories</span></h4>
                                         <div className="justify-start items-start gap-2 inline-flex flex-wrap">
-                                            <Link className="button-7 hover-up" href="/category">Art</Link>
-                                            <Link className="button-7 hover-up" href="/category">Fashion</Link>
-                                            <Link className="button-7 hover-up" href="/category">Health</Link>
-                                            <Link className="button-7 hover-up" href="/category">Food</Link>
-                                            <Link className="button-7 hover-up" href="/category">Travel</Link>
+                                            <Link className="button-7 hover-up" href="/category">Wheat</Link>
+                                            <Link className="button-7 hover-up" href="/category">Rice</Link>
                                             <Link className="button-7 hover-up" href="/category">Cotton</Link>
-                                            <Link className="button-7 hover-up" href="/category">Sports</Link>
+                                            <Link className="button-7 hover-up" href="/category">Tea</Link>
+                                            <Link className="button-7 hover-up" href="/category">Coffee</Link>
+                                            <Link className="button-7 hover-up" href="/category">Maize</Link>
+                                            <Link className="button-7 hover-up" href="/category">Sugarcane</Link>
                                         </div>
                                     </div>
                                     {/* Banner box */}
