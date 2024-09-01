@@ -2,8 +2,11 @@
 
 module.exports = {
     content: [
+        "./pages/**/*.{ts,tsx}",
         './components/**/**/*.{js,ts,jsx,tsx,mdx}',
         './app/**/**/*.{js,ts,jsx,tsx,mdx}',
+        "./src/**/*.{ts,tsx}",
+        "./lib/**/*.{ts,tsx}",
     ],
     darkMode: 'class',
     theme: {
@@ -16,8 +19,17 @@ module.exports = {
         },
         container: {
             center: true,
+            padding: "2rem",
+            screens: {
+              "2xl": "1400px",
+            },
         },
         colors: {
+            border: "hsl(var(--border))",
+            input: "hsl(var(--input))",
+            ring: "hsl(var(--ring))",
+            background: "hsl(var(--background))",
+            foreground: "hsl(var(--foreground))",
             "primary-light": {
                 950: '#FFCF01',
                 300: '#FFF6CF',
@@ -56,7 +68,33 @@ module.exports = {
                 900: '#EEEEEE',
                 950: '#FFFFFF',
             },
+            destructive: {
+                DEFAULT: "hsl(var(--destructive))",
+                foreground: "hsl(var(--destructive-foreground))",
+              },
+            muted: {
+                DEFAULT: "hsl(var(--muted))",
+                foreground: "hsl(var(--muted-foreground))",
+            },
+            accent: {
+                DEFAULT: "hsl(var(--accent))",
+                foreground: "hsl(var(--accent-foreground))",
+            },
+            popover: {
+                DEFAULT: "hsl(var(--popover))",
+                foreground: "hsl(var(--popover-foreground))",
+            },
+            card: {
+                DEFAULT: "hsl(var(--card))",
+                foreground: "hsl(var(--card-foreground))",
+            },
         },
+
+        borderRadius: {
+            lg: "var(--radius)",
+            md: "calc(var(--radius) - 2px)",
+            sm: "calc(var(--radius) - 4px)",
+          },
 
         fontFamily: {
             'sans': ['Inter', 'sans-serif'],
@@ -88,11 +126,26 @@ module.exports = {
             'black': 900,
         },
 
+        keyframes: {
+            "accordion-down": {
+              from: { height: "0" },
+              to: { height: "var(--radix-accordion-content-height)" },
+            },
+            "accordion-up": {
+              from: { height: "var(--radix-accordion-content-height)" },
+              to: { height: "0" },
+            },
+          },
+          animation: {
+            "accordion-down": "accordion-down 0.2s ease-out",
+            "accordion-up": "accordion-up 0.2s ease-out",
+          },
+
         extend: {
             boxShadow: {
                 'sm': '0px 0px 60px 0px rgba(0, 0, 0, 0.05)',
             }
         },
     },
-    plugins: [],
+    plugins: [require("tailwindcss-animate"), require("@tailwindcss/typography")],
 }
