@@ -197,7 +197,7 @@ const commodities = [
 const CommodityPrice = () => {
   const [filters, setFilters] = useState({
     commodity: '',
-    state: 'Gujarat',
+    state: '',
     district: '',
   });
 
@@ -224,7 +224,7 @@ const CommodityPrice = () => {
     setLoading(true); // Set loading to true when fetching starts
     try {
       const { commodity, state, district } = filters;
-      let url = `https://api.data.gov.in/resource/9ef84268-d588-465a-a308-a864a43d0070?api-key=${apiKey}&format=json&limit=20000`;
+      let url = `https://api.data.gov.in/resource/9ef84268-d588-465a-a308-a864a43d0070?api-key=${apiKey}&format=json&limit=200`;
 
       if (commodity) url += `&filters[commodity]=${encodeURIComponent(commodity)}`;
       if (state) url += `&filters[state]=${encodeURIComponent(state)}`;
