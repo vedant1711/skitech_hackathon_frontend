@@ -35,8 +35,8 @@ function ThemeSwitch() {
     return (
         <div>
             <div className="dark-light cursor-pointer flex relative z-20" onClick={handleDarkLightToggle}>
-                <img src="assets/imgs/template/icon-dark-light.svg" alt="dark/light" className="dark:hidden" />
-                <img src="assets/imgs/template/icon-dark-light-white.svg" alt="dark/light" className="hidden dark:inline-block" />
+                {/* <img src="assets/imgs/template/icon-dark-light.svg" alt="dark/light" className="dark:hidden" />
+                <img src="assets/imgs/template/icon-dark-light-white.svg" alt="dark/light" className="hidden dark:inline-block" /> */}
             </div>
         </div>
     )

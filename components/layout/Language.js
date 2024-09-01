@@ -28,7 +28,7 @@ export default function Language() {
     }
     return (
         <>
-            <div className="relative size-6 z-10">
+            {/* <div className="relative size-6 z-10">
                 <div className={`language absolute inline-flex flex-col gap-[2px] overflow-hidden min-w-32 h-[24px] top-0 left-0 ${isOpen ? 'is-open' : ''}`} onClick={toggleLanguageSwitch}>
                     <div className={`language__el bg-neutral-0 dark:bg-neutral-dark-0 cursor-pointer ${activeLanguage === 'en' ? 'is-active' : ''}`} onClick={() => setActiveLanguageHandler('en')}>
                         <div className="language__link flex gap-2 items-center">
@@ -67,7 +67,7 @@ export default function Language() {
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> */}
 
         </>
     )
