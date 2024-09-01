@@ -293,7 +293,7 @@ export default function BlogDetails() {
                                         <div className="about p-12 rounded-3xl bg-primary-light-300 dark:bg-primary-dark-300">
                                             <h1 className="mb-8">
                                                 <Link href="/index">
-                                                    <img src="/assets/imgs/template/logo.svg" alt="logo" className="flex-shrink-0 relative dark:hidden" />
+                                                    <img src="/assets/imgs/template/image.png" alt="logo" className="flex-shrink-0 relative dark:hidden" />
                                                     <img src="/assets/imgs/template/logo-white.svg" alt="logo" className="flex-shrink-0 relative hidden dark:inline-block" />
                                                 </Link>
                                             </h1>
@@ -366,7 +366,7 @@ export default function BlogDetails() {
                                             <div className="justify-start items-center gap-5 inline-flex">
                                                 <Link href="/category" className="px-3 py-[8px] bg-neutral-200 dark:bg-neutral-dark-200 rounded-3xl border border-neutral-200 dark:border-neutral-dark-300 justify-center items-center gap-2.5 flex">
                                                     <div className="text-neutral-900 dark:text-neutral-dark-950 text-sm font-medium leading-none">
-                                                        Trending</div>
+                                                        Wheat</div>
                                                 </Link>
                                                 <div className="justify-start items-center gap-2 flex">
                                                     <div className="text-neutral-700 text-sm font-medium leading-none dark:text-neutral-dark-700">
@@ -384,7 +384,7 @@ export default function BlogDetails() {
                                             <div className="justify-start items-center gap-5 inline-flex">
                                                 <Link href="/category" className="px-3 py-[8px] bg-neutral-200 dark:bg-neutral-dark-200 rounded-3xl border border-neutral-200 dark:border-neutral-dark-300 justify-center items-center gap-2.5 flex">
                                                     <div className="text-neutral-900 dark:text-neutral-dark-950 text-sm font-medium leading-none">
-                                                        Trending</div>
+                                                        Wheat</div>
                                                 </Link>
                                                 <div className="justify-start items-center gap-2 flex">
                                                     <div className="text-neutral-700 text-sm font-medium leading-none dark:text-neutral-dark-700">
@@ -402,7 +402,7 @@ export default function BlogDetails() {
                                             <div className="justify-start items-center gap-5 inline-flex">
                                                 <Link href="/category" className="px-3 py-[8px] bg-neutral-200 dark:bg-neutral-dark-200 rounded-3xl border border-neutral-200 dark:border-neutral-dark-300 justify-center items-center gap-2.5 flex">
                                                     <div className="text-neutral-900 dark:text-neutral-dark-950 text-sm font-medium leading-none">
-                                                        Trending</div>
+                                                        Wheat</div>
                                                 </Link>
                                                 <div className="justify-start items-center gap-2 flex">
                                                     <div className="text-neutral-700 text-sm font-medium leading-none dark:text-neutral-dark-700">
@@ -420,7 +420,7 @@ export default function BlogDetails() {
                                             <div className="justify-start items-center gap-5 inline-flex">
                                                 <Link href="/category" className="px-3 py-[8px] bg-neutral-200 dark:bg-neutral-dark-200 rounded-3xl border border-neutral-200 dark:border-neutral-dark-300 justify-center items-center gap-2.5 flex">
                                                     <div className="text-neutral-900 dark:text-neutral-dark-950 text-sm font-medium leading-none">
-                                                        Trending</div>
+                                                        Wheat</div>
                                                 </Link>
                                                 <div className="justify-start items-center gap-2 flex">
                                                     <div className="text-neutral-700 text-sm font-medium leading-none dark:text-neutral-dark-700">

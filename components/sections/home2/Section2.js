@@ -19,12 +19,12 @@ export default function Section2() {
                             <div className="about p-12 rounded-3xl bg-primary-light-300 dark:bg-primary-dark-300">
                                 <h1 className="mb-8">
                                     <Link href="/index">
-                                        <img src="/assets/imgs/template/logo.svg" alt="logo" className="flex-shrink-0 relative dark:hidden" />
+                                        <img src="/assets/imgs/template/image.png" alt="logo" className="flex-shrink-0 relative dark:hidden" />
                                         <img src="/assets/imgs/template/logo-white.svg" alt="logo" className="flex-shrink-0 relative hidden dark:inline-block" />
                                     </Link>
                                 </h1>
                                 <p className="font-medium text-neutral-950 dark:text-neutral-dark-950 mb-8 lg:mb-12 max-w-[350px]">
-                                    It involves entrepreneurship, management, marketing, finance, and many other aspects.
+                                    It contains the power of real-time insights, expert advice, and a thriving community of farmers like you!
                                     Businesses aim to generate
                                 </p>
                                 <div className="flex gap-2">
@@ -119,7 +119,7 @@ export default function Section2() {
                                     <Link className="button-7 hover-up" href="/category">Health</Link>
                                     <Link className="button-7 hover-up" href="/category">Food</Link>
                                     <Link className="button-7 hover-up" href="/category">Travel</Link>
-                                    <Link className="button-7 hover-up" href="/category">Technology</Link>
+                                    <Link className="button-7 hover-up" href="/category">Cotton</Link>
                                     <Link className="button-7 hover-up" href="/category">Sports</Link>
                                 </div>
                             </div>

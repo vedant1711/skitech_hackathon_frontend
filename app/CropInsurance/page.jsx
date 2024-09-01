@@ -24,7 +24,7 @@ export default async function Category3() {
                                     <div className="about p-12 rounded-3xl bg-primary-light-300 dark:bg-primary-dark-300">
                                         {/* <h1 className="mb-8">
                                             <Link href="/index">
-                                                <img src="/assets/imgs/template/logo.svg" alt="logo" className="flex-shrink-0 relative dark:hidden" />
+                                                <img src="/assets/imgs/template/image.png" alt="logo" className="flex-shrink-0 relative dark:hidden" />
                                                 <img src="/assets/imgs/template/logo-white.svg" alt="logo" className="flex-shrink-0 relative hidden dark:inline-block" />
                                             </Link>
                                         </h1> */}
@@ -135,7 +135,7 @@ export default async function Category3() {
                                             <Link className="button-7 hover-up" href="/category">Health</Link>
                                             <Link className="button-7 hover-up" href="/category">Food</Link>
                                             <Link className="button-7 hover-up" href="/category">Travel</Link>
-                                            <Link className="button-7 hover-up" href="/category">Technology</Link>
+                                            <Link className="button-7 hover-up" href="/category">Cotton</Link>
                                             <Link className="button-7 hover-up" href="/category">Sports</Link>
                                         </div>
                                     </div>

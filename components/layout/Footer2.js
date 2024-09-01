@@ -40,12 +40,12 @@ export default function Footer2() {
                         <div className="mb-8 lg:mb-4 lg:max-w-96">
                             <h1 className="mb-8">
                                 <a href="/">
-                                    <img src="assets/imgs/template/logo.svg" alt="logo" className="flex-shrink-0 relative dark:hidden" />
+                                    <img src="assets/imgs/template/image.png" alt="logo" className="flex-shrink-0 relative dark:hidden" />
                                     <img src="assets/imgs/template/logo-white.svg" alt="logo" className="flex-shrink-0 relative hidden dark:inline-block" />
                                 </a>
                             </h1>
                             <p className="font-medium text-neutral-950 dark:text-neutral-dark-950 mb-8 lg:mb-12 max-w-[350px]">
-                                It involves entrepreneurship, management, marketing, finance, and many other aspects. Businesses
+                                It contains the power of real-time insights, expert advice, and a thriving community of farmers like you! Businesses
                                 aim to generate
                             </p>
                             <div className="flex gap-2">
@@ -73,16 +73,16 @@ export default function Footer2() {
                                 <h6 className="text-base font-bold text-neutral-700 dark:text-neutral-dark-700 mb-2">Category</h6>
                                 <ul>
                                     <li className="footer-menu">
-                                        <a href="/category" className="text-base font-regular text-neutral-950 dark:text-neutral-dark-950">Trending</a>
+                                        <a href="/category" className="text-base font-regular text-neutral-950 dark:text-neutral-dark-950">Wheat</a>
                                     </li>
                                     <li className="footer-menu">
-                                        <a href="/category-2" className="text-base font-regular text-neutral-950 dark:text-neutral-dark-950">Fashion</a>
+                                        <a href="/category-2" className="text-base font-regular text-neutral-950 dark:text-neutral-dark-950">Rice</a>
                                     </li>
                                     <li className="footer-menu">
-                                        <a href="/category-3" className="text-base font-regular text-neutral-950 dark:text-neutral-dark-950">Technology</a>
+                                        <a href="/category-3" className="text-base font-regular text-neutral-950 dark:text-neutral-dark-950">Cotton</a>
                                     </li>
                                     <li className="footer-menu">
-                                        <a href="/category-4" className="text-base font-regular text-neutral-950 dark:text-neutral-dark-950">Healthy</a>
+                                        <a href="/category-4" className="text-base font-regular text-neutral-950 dark:text-neutral-dark-950">Maize</a>
                                     </li>
                                 </ul>
                             </div>
