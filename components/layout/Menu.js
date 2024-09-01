@@ -31,22 +31,33 @@ export default function Menu() {
                         <li><Link href="/single-2" className="menu-sub-item">Single 02</Link></li>
                     </ul>
                 </li> */}
-                <li className="relative group">
-                    <Link className="menu-item" href="/#">Features</Link>
+                {/* <li className="relative group">
+                    <Link className="menu-item" href="diseaseDetection">Disease Detection</Link>
                     <ul className="z-100 absolute px-6 py-4 rounded-md left-4 bg-neutral-0 dark:bg-neutral-dark-0 min-w-48 shadow-sm mt-8 opacity-0 invisible group-hover:opacity-100 group-hover:visible group-hover:mt-4 transition-all duration-500">
-                        {/* <li><Link href="/page-about" className="menu-sub-item">About me</Link></li>
+                        <li><Link href="/page-about" className="menu-sub-item">About me</Link></li>
                         <li><Link href="/page-author" className="menu-sub-item">Author</Link></li>
                         <li><Link href="/page-search" className="menu-sub-item">Search Results</Link></li>
                         <li><Link href="/page-contact" className="menu-sub-item">Contact</Link></li>
                         <li><Link href="/page-login" className="menu-sub-item">Login</Link></li>
                         <li><Link href="/page-register" className="menu-sub-item">Register</Link></li>
-                        <li><Link href="/page-forgot-password" className="menu-sub-item">Forgot Password</Link></li> */}
-                        <li><Link href="diseaseDetection" className="menu-sub-item">Disease Detection</Link></li>
-                        <li><Link href="cropInsurance" className="menu-sub-item">Crop Insurance</Link></li>
-                        <li><Link href="commodityPrices" className="menu-sub-item">Commodity Market Price</Link></li>
-                        <li><Link href="recommendationPage" className="menu-sub-item">Crop and Fertilizer recommendation</Link></li>
-                        <li><Link href="createBlogPost" className="menu-sub-item">Create Blog Post</Link></li>
-                        {/* <li><Link href="/page-404" className="menu-sub-item">Error 404</Link></li> */}
+                        <li><Link href="/page-forgot-password" className="menu-sub-item">Forgot Password</Link></li>
+                        <li><Link href="/page-404" className="menu-sub-item">Error 404</Link></li>
+                    </ul>
+                </li> */}
+                <li className="relative group">
+                    <Link className="menu-item text-center" href="diseaseDetection">Disease Detection</Link>
+                </li>
+                <li className="relative group">
+                    <Link className="menu-item text-center" href="cropInsurance">Insurance</Link>
+                </li>
+                <li className="relative group">
+                    <Link className="menu-item text-center" href="commodityPrices">Commodity Price</Link>
+                </li>
+                <li className="relative group">
+                    <Link className="menu-item text-center" href="/#">Get Recommendation</Link>
+                    <ul className="z-100 absolute px-6 py-4 rounded-md left-4 bg-neutral-0 dark:bg-neutral-dark-0 min-w-48 shadow-sm mt-8 opacity-0 invisible group-hover:opacity-100 group-hover:visible group-hover:mt-4 transition-all duration-500">
+                        <li><Link href="/recommendationPage" className="menu-sub-item">Crop</Link></li>
+                        <li><Link href="/recommendationPage" className="menu-sub-item">Fertilizer</Link></li>
                     </ul>
                 </li>
      
