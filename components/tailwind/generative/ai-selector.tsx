@@ -71,7 +71,11 @@ export function AISelector({ onOpenChange }: AISelectorProps) {
               onValueChange={setInputValue}
               autoFocus
               placeholder={hasCompletion ? "Tell AI what to do next" : "Ask AI to edit or generate..."}
-              onFocus={() => addAIHighlight(editor)}
+              onFocus={() => {
+                if (editor !== null) {
+                  addAIHighlight(editor);
+                }
+              }}
             />
             <Button
               size="icon"
@@ -81,7 +85,9 @@ export function AISelector({ onOpenChange }: AISelectorProps) {
                   return complete(completion, {
                     body: { option: "zap", command: inputValue },
                   }).then(() => setInputValue(""));
-
+                if(editor==null){
+                  return;
+                  }
                 const slice = editor.state.selection.content();
                 const text = editor.storage.markdown.serializer.serialize(slice.content);
 
@@ -96,6 +102,9 @@ export function AISelector({ onOpenChange }: AISelectorProps) {
           {hasCompletion ? (
             <AICompletionCommands
               onDiscard={() => {
+                if(editor==null){
+                  return;
+                  }
                 editor.chain().unsetHighlight().focus().run();
                 onOpenChange(false);
               }}

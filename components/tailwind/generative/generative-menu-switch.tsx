@@ -15,6 +15,10 @@ const GenerativeMenuSwitch = ({ children, open, onOpenChange }: GenerativeMenuSw
   const { editor } = useEditor();
 
   useEffect(() => {
+
+    if(editor==null){
+      return;
+      }
     if (!open) removeAIHighlight(editor);
   }, [open]);
   return (
@@ -22,11 +26,14 @@ const GenerativeMenuSwitch = ({ children, open, onOpenChange }: GenerativeMenuSw
       tippyOptions={{
         placement: open ? "bottom-start" : "top",
         onHidden: () => {
+          if(editor==null){
+            return;
+            }
           onOpenChange(false);
           editor.chain().unsetHighlight().run();
         },
       }}
-      className="flex w-fit max-w-[90vw] overflow-hidden rounded-md border border-muted bg-background shadow-xl"
+      className="flex w-fit max-w-[90vw] overflow-hidden rounded-md border border-muted bg-[#000617] shadow-xl"
     >
       {open && <AISelector open={open} onOpenChange={onOpenChange} />}
       {!open && (

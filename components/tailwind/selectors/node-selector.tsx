@@ -6,6 +6,7 @@ import {
   Heading1,
   Heading2,
   Heading3,
+  Heading4,
   ListOrdered,
   type LucideIcon,
   TextIcon,
@@ -26,60 +27,98 @@ export type SelectorItem = {
 
 const items: SelectorItem[] = [
   {
+
+    
     name: "Text",
     icon: TextIcon,
-    command: (editor) => editor.chain().focus().clearNodes().run(),
+    command: (editor) => {
+      if (editor) {
+        editor.chain().focus().clearNodes().run();
+      }
+    },
     // I feel like there has to be a more efficient way to do this – feel free to PR if you know how!
-    isActive: (editor) =>
-      editor.isActive("paragraph") && !editor.isActive("bulletList") && !editor.isActive("orderedList"),
+    isActive: (editor) => editor ? editor.isActive("paragraph") && !editor.isActive("bulletList") && !editor.isActive("orderedList") : false,
   },
   {
     name: "Heading 1",
     icon: Heading1,
-    command: (editor) => editor.chain().focus().clearNodes().toggleHeading({ level: 1 }).run(),
-    isActive: (editor) => editor.isActive("heading", { level: 1 }),
+    command: (editor) => {
+      if(editor){
+      editor.chain().focus().clearNodes().toggleHeading({ level: 1 }).run()
+      }
+    },
+    isActive: (editor) => editor ?  editor.isActive("heading", { level: 1 }): false,
   },
   {
     name: "Heading 2",
     icon: Heading2,
-    command: (editor) => editor.chain().focus().clearNodes().toggleHeading({ level: 2 }).run(),
-    isActive: (editor) => editor.isActive("heading", { level: 2 }),
+    command: (editor) => {
+      if(editor){
+        editor.chain().focus().clearNodes().toggleHeading({ level: 2 }).run()
+      }
+    },
+    isActive: (editor) => editor ?  editor.isActive("heading", { level: 2 }): false,
   },
   {
     name: "Heading 3",
     icon: Heading3,
-    command: (editor) => editor.chain().focus().clearNodes().toggleHeading({ level: 3 }).run(),
-    isActive: (editor) => editor.isActive("heading", { level: 3 }),
+    command: (editor) => {
+      if (editor) {
+        editor.chain().focus().clearNodes().toggleHeading({ level: 3 }).run();
+      }
+    },
+    isActive: (editor) => editor ? editor.isActive("heading", { level: 3 }) : false,
   },
+  
   {
     name: "To-do List",
     icon: CheckSquare,
-    command: (editor) => editor.chain().focus().clearNodes().toggleTaskList().run(),
-    isActive: (editor) => editor.isActive("taskItem"),
+    command: (editor) => {
+      if (editor) {
+        editor.chain().focus().clearNodes().toggleTaskList().run();
+      }
+    },
+    isActive: (editor) => editor ? editor.isActive("taskItem") : false,
   },
   {
     name: "Bullet List",
     icon: ListOrdered,
-    command: (editor) => editor.chain().focus().clearNodes().toggleBulletList().run(),
-    isActive: (editor) => editor.isActive("bulletList"),
+    command: (editor) => {
+      if (editor) {
+        editor.chain().focus().clearNodes().toggleBulletList().run();
+      }
+    },
+    isActive: (editor) => editor ? editor.isActive("bulletList") : false,
   },
   {
     name: "Numbered List",
     icon: ListOrdered,
-    command: (editor) => editor.chain().focus().clearNodes().toggleOrderedList().run(),
-    isActive: (editor) => editor.isActive("orderedList"),
+    command: (editor) => {
+      if (editor) {
+        editor.chain().focus().clearNodes().toggleOrderedList().run();
+      }
+    },
+    isActive: (editor) => editor ? editor.isActive("orderedList") : false,
   },
   {
     name: "Quote",
     icon: TextQuote,
-    command: (editor) => editor.chain().focus().clearNodes().toggleBlockquote().run(),
-    isActive: (editor) => editor.isActive("blockquote"),
+    command: (editor) => {
+      if (editor) {
+        editor.chain().focus().clearNodes().toggleBlockquote().run();
+      }
+    },
+    isActive: (editor) => editor ? editor.isActive("blockquote") : false,
   },
   {
     name: "Code",
     icon: Code,
-    command: (editor) => editor.chain().focus().clearNodes().toggleCodeBlock().run(),
-    isActive: (editor) => editor.isActive("codeBlock"),
+    command: (editor) => {
+      if (editor) {
+        editor.chain().focus().clearNodes().toggleCodeBlock().run();
+      }
+    },
+    isActive: (editor) => editor ? editor.isActive("codeBlock") : false,
   },
 ];
 interface NodeSelectorProps {
