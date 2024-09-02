@@ -15,12 +15,21 @@ export const fetchUser = async (userID) => {
   };
 
 export const signupUser = async (body) => {
+    console.log(body, "body");
+const requestBody = {
+    first_name: body.firstName,
+    last_name: body.lastName,
+    phone_number: body.contactNo,
+    password: body.password
+}
+console.log(requestBody)
+
 try {
     // const userId = localStorage.getItem("userId")
-    const response = await axios.get(`${apiUrl}/blogs/signup/`, body);
+    const response = await axios.post(`${apiUrl}/blogs/signup/`, requestBody);
     return response;
 } catch (error) {
-    console.log("Error fetching author details:", error);
+    console.log("Error Signing up:", error);
     return error;
 }
 };
@@ -54,3 +63,93 @@ export const addBlog = async (blogData) => {
     throw error;
   }
 };
+
+export const signinUser = async (body) => {
+    console.log(body);
+const requestBody = {
+    phone_number: body.phone_number,
+    password: body.password
+}
+console.log(requestBody)
+
+try {
+    // const userId = localStorage.getItem("userId")
+    const response = await axios.post(`${apiUrl}/blogs/signin/`, requestBody);
+    return response;
+} catch (error) {
+    console.log("Error Sigining in:", error);
+    return error;
+}
+};
+
+export const fertilizerRecommendation = async ({body}) => {
+    console.log(body);
+    console.log(body.nutrientValues) 
+
+const requestBody = {
+    crop_name: body.cropName,
+    farm_area: body.plotSize,
+    n: parseFloat(body.nutrientValues.nitrogen),
+    p: parseFloat(body.nutrientValues.phosphorus),
+    k: parseFloat(body.nutrientValues.potassium),
+}
+console.log(requestBody);
+
+try {
+    // const userId = localStorage.getItem("userId")
+    const response = await axios.post(`${apiUrl}/app/fertilizer-combinations/`, requestBody);
+    return response;
+} catch (error) {
+    console.log("Error Sigining in:", error.response.data);
+    return error;
+}
+};
+
+export const cropRecommendation = async (inputs) => {
+    console.log(inputs);
+const requestBody = {
+    lat: inputs.latitude,
+    long: inputs.longitude,
+    n: parseFloat(inputs.nitrogen),
+    p: parseFloat(inputs.phosphorus),
+    k: parseFloat(inputs.potassium),
+    ph: parseFloat(inputs.pH),
+}
+console.log(requestBody);
+
+try {
+    // const userId = localStorage.getItem("userId")
+    const response = await axios.post(`${apiUrl}/app/crop-recommendation/`, requestBody);
+    console.log(response)
+    return response;
+} catch (error) {
+    console.log("Error Sigining in:", error.response.data);
+    return error;
+}
+};
+
+// helpers/apiHelpers.js
+
+export const detectDisease = async (file) => {
+    console.log(file)
+    try {
+      const formData = new FormData();
+      formData.append('image', file);
+
+    // Inspect FormData contents
+    for (let [key, value] of formData.entries()) {
+        console.log(key, value);  // This will log each key-value pair
+      }
+  
+      const response = await axios.post(`${apiUrl}/app/predict-disease/`, formData, {
+        headers: {
+          'Content-Type': 'multipart/form-data',
+        },
+      });
+  
+      return response.data;
+    } catch (error) {
+        console.error('Error detecting disease:', error.response?.data || error.message);
+        throw error;
+    }
+  };

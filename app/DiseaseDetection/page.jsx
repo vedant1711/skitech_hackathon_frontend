@@ -2,27 +2,41 @@
 import { useState } from "react";
 import Layout from "@/components/layout/Layout";
 import Link from "next/link";
+import { detectDisease } from "../../util/helper"; // Import the helper function
 
 export default function DiseaseDetection() {
     const [image, setImage] = useState(null);
-    const [cropName, setCropName] = useState("");
     const [diseaseName, setDiseaseName] = useState("");
     const [diseaseDescription, setDiseaseDescription] = useState("Detailed description of the disease based on the analysis.");
-    const [cause, setCause] = useState("Detailed explanation of the cause of the disease based on the image and the crop name provided.");
-    const [prevention, setPrevention] = useState("Steps to prevent the disease from spreading or occurring in the future.");
-    const [cure, setCure] = useState("Remedies or treatments available to cure the disease.");
+    const [causes, setCauses] = useState([]);
+    const [prevention, setPrevention] = useState([]);
+    // const [cure, setCure] = useState("Detailed information on cure.");
     const [recommendedProducts, setRecommendedProducts] = useState([
         { name: "Product 1", description: "Product 1 description." },
         { name: "Product 2", description: "Product 2 description." },
         { name: "Product 3", description: "Product 3 description." }
     ]);
 
-    const handleImageUpload = (event) => {
+    const handleImageUpload = async (event) => {
         const file = event.target.files[0];
         if (file) {
             setImage(URL.createObjectURL(file));
-            // This is where you would integrate with the ML model
-            // and update state variables with data returned from the backend.
+
+            try {
+                // Use the helper function to send the image to the backend
+                const data = await detectDisease(file);
+                
+                // Update state variables based on the response data
+                setDiseaseName(data.disease_name || "Unknown Disease");
+                setDiseaseDescription(data.description || "No description available.");
+                setCauses(data.causes ? Object.values(data.causes) : ["No cause information available."]);
+                setPrevention(data.prevent ? Object.values(data.prevent) : ["No prevention steps available."]);
+                setCure(data.cure || "No cure information available.");
+                setRecommendedProducts(data.recommended_products || []);
+            } catch (error) {
+                console.error('Failed to detect disease:', error);
+                alert('Failed to detect disease. Please try again.');
+            }
         }
     };
 
@@ -73,20 +87,6 @@ export default function DiseaseDetection() {
                                     )}
                                 </label>
                             </div>
-                            <input
-                                type="text"
-                                placeholder="Enter Crop Name"
-                                value={cropName}
-                                onChange={(e) => setCropName(e.target.value)}
-                                className="mb-4 w-full p-4 text-base font-md text-neutral-950 border border-neutral-300 rounded-lg"
-                            />
-                            <input
-                                type="text"
-                                placeholder="Enter Disease Name (if known)"
-                                value={diseaseName}
-                                onChange={(e) => setDiseaseName(e.target.value)}
-                                className="w-full p-4 text-base font-md text-neutral-950 border border-neutral-300 rounded-lg"
-                            />
                         </div>
                     </div>
                 </section>
@@ -114,9 +114,11 @@ export default function DiseaseDetection() {
                                     <h3 className="text-xl font-semibold mb-4 text-neutral-900 dark:text-neutral-dark-900">
                                         Cause
                                     </h3>
-                                    <p className="text-base font-md text-neutral-700 dark:text-neutral-dark-700">
-                                        {cause}
-                                    </p>
+                                    <ul className="list-disc list-inside text-base font-md text-neutral-700 dark:text-neutral-dark-700">
+                                        {causes.map((cause, index) => (
+                                            <li key={index}>{cause}</li>
+                                        ))}
+                                    </ul>
                                 </div>
 
                                 {/* Prevention */}
@@ -124,20 +126,22 @@ export default function DiseaseDetection() {
                                     <h3 className="text-xl font-semibold mb-4 text-neutral-900 dark:text-neutral-dark-900">
                                         Prevention
                                     </h3>
-                                    <p className="text-base font-md text-neutral-700 dark:text-neutral-dark-700">
-                                        {prevention}
-                                    </p>
+                                    <ul className="list-disc list-inside text-base font-md text-neutral-700 dark:text-neutral-dark-700">
+                                        {prevention.map((step, index) => (
+                                            <li key={index}>{step}</li>
+                                        ))}
+                                    </ul>
                                 </div>
 
                                 {/* Cure */}
-                                <div className="bg-neutral-100 p-8 rounded-lg shadow-md">
+                                {/* <div className="bg-neutral-100 p-8 rounded-lg shadow-md">
                                     <h3 className="text-xl font-semibold mb-4 text-neutral-900 dark:text-neutral-dark-900">
                                         Cure
                                     </h3>
                                     <p className="text-base font-md text-neutral-700 dark:text-neutral-dark-700">
                                         {cure}
                                     </p>
-                                </div>
+                                </div> */}
                             </div>
                         </div>
                     </div>
@@ -150,46 +154,17 @@ export default function DiseaseDetection() {
                             <h2 className="heading-2 max-w-7xl mb-12 text-neutral-950 dark:text-neutral-dark-950">
                                 Recommended Products
                             </h2>
-                            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-12">
-                                {recommendedProducts.length ? recommendedProducts.map((product, index) => (
-                                    <div key={index} className="bg-white p-8 rounded-lg shadow-md">
-                                        <h6 className="text-lg font-bold text-neutral-900 dark:text-neutral-dark-900 mb-1">{product.name}</h6>
-                                        <p className="text-sm font-medium text-neutral-700 dark:text-neutral-dark-700">{product.description}</p>
+                            <div className="grid md:grid-cols-2 gap-12">
+                                {recommendedProducts.map((product, index) => (
+                                    <div key={index} className="bg-neutral-100 p-8 rounded-lg shadow-md">
+                                        <h3 className="text-xl font-semibold mb-4 text-neutral-900 dark:text-neutral-dark-900">
+                                            {product.name}
+                                        </h3>
+                                        <p className="text-base font-md text-neutral-700 dark:text-neutral-dark-700">
+                                            {product.description}
+                                        </p>
                                     </div>
-                                )) : (
-                                    <p className="text-base font-md text-neutral-700 dark:text-neutral-dark-700">
-                                        No recommended products available for this disease.
-                                    </p>
-                                )}
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
-                {/* References Section */}
-                <section className="pb-12 lg:pb-24 bg-neutral-100">
-                    <div className="container px-4">
-                        <h2 className="heading-2 max-w-7xl mb-12 text-neutral-950 dark:text-neutral-dark-950 text-center">
-                            References
-                        </h2>
-                        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-12">
-                            <div className="bg-neutral-50 p-8 rounded-lg shadow-md text-center">
-                                <img src="/assets/imgs/avatar/avatar-03.png" alt="Expert 1" className="rounded-full size-16 mb-4 mx-auto" />
-                                <h6 className="text-lg font-bold text-neutral-900 dark:text-neutral-dark-900 mb-1">Dr. John D</h6>
-                                <p className="text-sm font-medium text-neutral-700 dark:text-neutral-dark-700">Agriculture Expert</p>
-                                <p className="text-sm font-medium text-neutral-500 dark:text-neutral-dark-500">Phone: (239) 555-0108</p>
-                            </div>
-                            <div className="bg-neutral-50 p-8 rounded-lg shadow-md text-center">
-                                <img src="/assets/imgs/avatar/avatar-04.png" alt="Expert 2" className="rounded-full size-16 mb-4 mx-auto" />
-                                <h6 className="text-lg font-bold text-neutral-900 dark:text-neutral-dark-900 mb-1">Dr. Jane S</h6>
-                                <p className="text-sm font-medium text-neutral-700 dark:text-neutral-dark-700">Plant Pathologist</p>
-                                <p className="text-sm font-medium text-neutral-500 dark:text-neutral-dark-500">Phone: (239) 555-0130</p>
-                            </div>
-                            <div className="bg-neutral-50 p-8 rounded-lg shadow-md text-center">
-                                <img src="/assets/imgs/avatar/avatar-05.png" alt="Expert 3" className="rounded-full size-16 mb-4 mx-auto" />
-                                <h6 className="text-lg font-bold text-neutral-900 dark:text-neutral-dark-900 mb-1">Dr. Emily R</h6>
-                                <p className="text-sm font-medium text-neutral-700 dark:text-neutral-dark-700">Crop Consultant</p>
-                                <p className="text-sm font-medium text-neutral-500 dark:text-neutral-dark-500">Phone: (239) 555-0150</p>
+                                ))}
                             </div>
                         </div>
                     </div>

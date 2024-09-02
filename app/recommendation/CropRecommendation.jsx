@@ -1,13 +1,27 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import { cropRecommendation } from '../../util/helper';
 
 const CropRecommendation = () => {
   const [inputs, setInputs] = useState({
-    weather: '',
-    soilType: '',
+    latitude: '',
+    longitude: '',
+    pH: '',
     nitrogen: '',
     phosphorus: '',
     potassium: ''
   });
+
+  useEffect(() => {
+    if (navigator.geolocation) {
+      navigator.geolocation.getCurrentPosition((position) => {
+        setInputs({
+          ...inputs,
+          latitude: position.coords.latitude,
+          longitude: position.coords.longitude
+        });
+      });
+    }
+  }, []);
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
@@ -17,37 +31,55 @@ const CropRecommendation = () => {
     });
   };
 
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    console.log(inputs)
+    const recommendation = await cropRecommendation(inputs);
+    console.log(recommendation); // You can handle the recommendation result as needed
+  };
+
   return (
     <div className="p-8 border rounded-3xl shadow-xl bg-white dark:bg-gray-800 w-full max-w-lg mx-auto mt-8">
       <h2 className="text-2xl font-bold text-gray-800 dark:text-gray-100 mb-6">Crop Recommendation</h2>
 
-      {/* Weather Data */}
+      {/* Latitude and Longitude */}
       <div className="flex flex-col mb-5">
-        <label htmlFor="weather" className="text-sm font-medium text-gray-700 dark:text-gray-300">Weather Data</label>
+        <label htmlFor="latitude" className="text-sm font-medium text-gray-700 dark:text-gray-300">Latitude</label>
         <input
           type="text"
-          name="weather"
-          value={inputs.weather}
+          name="latitude"
+          value={inputs.latitude}
           onChange={handleInputChange}
-          placeholder="Enter weather data"
+          placeholder="Auto-filled if location permission is given"
           className="mt-2 p-3 border rounded-lg bg-gray-50 dark:bg-gray-700 text-gray-800 dark:text-gray-100 focus:ring-primary-light-950 focus:border-primary-light-950"
+          readOnly
         />
       </div>
 
-      {/* Soil Type */}
       <div className="flex flex-col mb-5">
-        <label htmlFor="soilType" className="text-sm font-medium text-gray-700 dark:text-gray-300">Soil Type</label>
-        <select
-          name="soilType"
-          value={inputs.soilType}
+        <label htmlFor="longitude" className="text-sm font-medium text-gray-700 dark:text-gray-300">Longitude</label>
+        <input
+          type="text"
+          name="longitude"
+          value={inputs.longitude}
           onChange={handleInputChange}
+          placeholder="Auto-filled if location permission is given"
           className="mt-2 p-3 border rounded-lg bg-gray-50 dark:bg-gray-700 text-gray-800 dark:text-gray-100 focus:ring-primary-light-950 focus:border-primary-light-950"
-        >
-          <option value="">Select Soil Type</option>
-          <option value="loamy">Loamy</option>
-          <option value="sandy">Sandy</option>
-          <option value="clay">Clay</option>
-        </select>
+          readOnly
+        />
+      </div>
+
+      {/* pH Value */}
+      <div className="flex flex-col mb-5">
+        <label htmlFor="pH" className="text-sm font-medium text-gray-700 dark:text-gray-300">pH Level</label>
+        <input
+          type="text"
+          name="pH"
+          value={inputs.pH}
+          onChange={handleInputChange}
+          placeholder="Enter soil pH level"
+          className="mt-2 p-3 border rounded-lg bg-gray-50 dark:bg-gray-700 text-gray-800 dark:text-gray-100 focus:ring-primary-light-950 focus:border-primary-light-950"
+        />
       </div>
 
       {/* NPK Values */}
@@ -87,7 +119,10 @@ const CropRecommendation = () => {
         </div>
       </div>
 
-      <button className="w-full bg-primary-light-950 text-white py-3 px-8 rounded-full hover:from-primary-light-800 hover:to-primary-dark-800 transition duration-300 shadow-md">
+      <button
+        onClick={handleSubmit}
+        className="w-full bg-primary-light-950 text-white py-3 px-8 rounded-full hover:from-primary-light-800 hover:to-primary-dark-800 transition duration-300 shadow-md"
+      >
         Get Recommendation
       </button>
     </div>

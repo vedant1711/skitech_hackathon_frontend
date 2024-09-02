@@ -17,6 +17,7 @@ export default function Register() {
 
         try {
             const response = await signupUser({ firstName, lastName, contactNo, password });
+            console.log(response)
             if (response.success) {
                 setSuccess(true);
             } else {

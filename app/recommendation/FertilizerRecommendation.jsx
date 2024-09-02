@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
+import { fertilizerRecommendation } from '../../util/helper';
 
 const FertilizerRecommendation = () => {
+  const [cropName, setCropName] = useState(''); // New state for crop name
   const [plotSize, setPlotSize] = useState(1.0); // Default plot size
   const [unit, setUnit] = useState('Acre'); // Default unit
   const [nutrientValues, setNutrientValues] = useState({
@@ -9,6 +11,10 @@ const FertilizerRecommendation = () => {
     potassium: ''
   });
   const [fertilizerCombinations, setFertilizerCombinations] = useState([]);
+
+  const handleCropNameChange = (e) => {
+    setCropName(e.target.value);
+  };
 
   const handlePlotSizeChange = (value) => {
     setPlotSize(value);
@@ -25,19 +31,44 @@ const FertilizerRecommendation = () => {
     setUnit(e.target.value);
   };
 
-  const handleCalculate = () => {
-    // Fetch fertilizer combinations from backend
-    // Mocked data for demonstration:
-    const fetchedData = [
-      { name: 'DAP/MOP/Urea', details: 'DAP: 158 kg, MOP: 81 kg, Urea: 255 kg' },
-      { name: '10-26-26/SSP/Urea', details: '10-26-26: 187 kg, SSP: 152 kg, Urea: 276 kg' }
-    ];
-    setFertilizerCombinations(fetchedData);
+  const handleCalculate = async () => {
+    // Convert plot size to hectares if necessary
+    let sizeInHectares = plotSize;
+    if (unit === 'Acre') {
+      sizeInHectares = plotSize * 0.404686; // 1 Acre = 0.404686 Hectares
+    } else if (unit === 'Gunta') {
+      sizeInHectares = plotSize * 0.010117; // 1 Gunta = 0.010117 Hectares
+    }
+
+    const body = {
+      cropName: cropName,
+      plotSize: sizeInHectares,
+      nutrientValues: nutrientValues,
+    };
+
+    // Call the fertilizerRecommendation helper function
+    const recommendations = await fertilizerRecommendation({ body });
+    console.log(recommendations.data);
+
+    // Update the state with fetched recommendations
+    setFertilizerCombinations(recommendations.data);
   };
 
   return (
     <div className="p-6 border rounded-3xl shadow-xl bg-white dark:bg-gray-800 w-full max-w-lg mx-auto">
       <h2 className="text-2xl font-semibold text-gray-800 dark:text-white mb-6">Fertilizer Recommendation</h2>
+
+      {/* Crop Name Section */}
+      <div className="mb-6">
+        <label className="text-md text-gray-700 dark:text-gray-300">Crop Name</label>
+        <input
+          type="text"
+          value={cropName}
+          onChange={handleCropNameChange}
+          className="mt-2 p-2 border rounded-lg bg-gray-50 dark:bg-gray-700 text-gray-800 dark:text-white w-full"
+          placeholder="Enter crop name"
+        />
+      </div>
 
       {/* Nutrient Quantities Section */}
       <div className="mb-6">
@@ -153,15 +184,15 @@ const FertilizerRecommendation = () => {
                 key={index}
                 className="p-4 border rounded-lg bg-primary-light-100 hover:shadow-md transition-shadow duration-300"
               >
-                <div className="flex justify-between">
-                  <span className="font-semibold text-gray-800 dark:text-gray-100">{combination.name}</span>
-                  <span className="text-blue-600 dark:text-blue-400 cursor-pointer">
-                    View Details
-                  </span>
-                </div>
-                <div className="text-sm text-gray-600 dark:text-gray-400 mt-2">
-                  {combination.details}
-                </div>
+                {/* Display each fertilizer and its amount */}
+                <ul>
+                  {Object.entries(combination).map(([fertilizer, amount]) => (
+                    <li key={fertilizer} className="flex justify-between text-gray-800 dark:text-gray-100">
+                      <span>{fertilizer}</span>
+                      <span>{amount} kg</span>
+                    </li>
+                  ))}
+                </ul>
               </div>
             ))}
           </div>
