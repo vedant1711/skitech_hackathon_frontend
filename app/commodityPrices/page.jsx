@@ -247,6 +247,7 @@ const CommodityPrice = () => {
   const [loading, setLoading] = useState(false); // New state for loading
   const [districts, setDistricts] = useState([]);
   const [errors, setErrors] = useState({});
+  const apiUrl = process.env.NEXT_PUBLIC_COMMODITY_API;
 
   const fetchCities = async (selectedState) => {
 
