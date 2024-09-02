@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import Layout from "@/components/layout/Layout";
 import axios from 'axios';
+import { fetchCitiesHelper } from '../../util/helper'; // Update the path accordingly
 
 // import commodities from "../../util/commodity.json"
 
@@ -193,6 +194,46 @@ const commodities = [
     "Yam (Ratalu)"
   ]
 
+const statesOfIndia = [
+    { key: "Andaman and Nicobar Islands", value: "AN" },
+    { key: "Andhra Pradesh", value: "AP" },
+    { key: "Arunachal Pradesh", value: "AR" },
+    { key: "Assam", value: "AS" },
+    { key: "Bihar", value: "BR" },
+    { key: "Chandigarh", value: "CH" },
+    { key: "Chhattisgarh", value: "CT" },
+    { key: "Dadra and Nagar Haveli and Daman and Diu", value: "DH" },
+    { key: "Delhi", value: "DL" },
+    { key: "Goa", value: "GA" },
+    { key: "Gujarat", value: "GJ" },
+    { key: "Haryana", value: "HR" },
+    { key: "Himachal Pradesh", value: "HP" },
+    { key: "Jammu and Kashmir", value: "JK" },
+    { key: "Jharkhand", value: "JH" },
+    { key: "Karnataka", value: "KA" },
+    { key: "Kerala", value: "KL" },
+    { key: "Ladakh", value: "LA" },
+    { key: "Lakshadweep", value: "LD" },
+    { key: "Madhya Pradesh", value: "MP" },
+    { key: "Maharashtra", value: "MH" },
+    { key: "Manipur", value: "MN" },
+    { key: "Meghalaya", value: "ML" },
+    { key: "Mizoram", value: "MZ" },
+    { key: "Nagaland", value: "NL" },
+    { key: "Odisha", value: "OR" },
+    { key: "Puducherry", value: "PY" },
+    { key: "Punjab", value: "PB" },
+    { key: "Rajasthan", value: "RJ" },
+    { key: "Sikkim", value: "SK" },
+    { key: "Tamil Nadu", value: "TN" },
+    { key: "Telangana", value: "TG" },
+    { key: "Tripura", value: "TR" },
+    { key: "Uttar Pradesh", value: "UP" },
+    { key: "Uttarakhand", value: "UK" },
+    { key: "West Bengal", value: "WB" }
+  ];
+  
+  // useEffect(() => {}, []);
 
 const CommodityPrice = () => {
   const [filters, setFilters] = useState({
@@ -204,17 +245,50 @@ const CommodityPrice = () => {
   const [marketData, setMarketData] = useState([]);
   const [fields, setFields] = useState([]);
   const [loading, setLoading] = useState(false); // New state for loading
+  const [districts, setDistricts] = useState([]);
+  const [errors, setErrors] = useState({});
 
-  const apiKey = process.env.NEXT_PUBLIC_COMMODITY_API;
+  const fetchCities = async (selectedState) => {
+
+    try {
+      const response = await fetchCitiesHelper(selectedState);
+      console.log(JSON.stringify(response));
+      // console.log('Cities fetched:', response.data); // Debugging line
+      return response;
+    } catch (error) {
+      console.error('Error fetching cities:', error);
+      return [];
+    }
+  };
+
+  const handleStateChange = async (e) => {
+    const selectedState = e.target.value;
+    setFilters({ ...filters, state: selectedState });
+    
+    try {
+      const response = await fetchCitiesHelper(selectedState);
+      setDistricts(response); // Assuming response is an array of cities/districts
+    } catch (error) {
+      console.error('Error fetching cities:', error);
+      setDistricts([]); // Ensure districts is set to empty array on error
+    }
+  };
+  
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
-    setFilters({
-      ...filters,
-      [name]: value
-    });
+  
+    setFilters((prevFilters) => ({
+      ...prevFilters,
+      [name]: value,
+      ...(name === "state" && { district: "" }), // Clear district if the state changes
+    }));
+  
+    if (name === "state") {
+      handleStateChange(e); // Trigger state change handler
+    }
   };
-
+  
   const handleSearch = () => {
     fetchMarketData(filters);
   };
@@ -230,6 +304,7 @@ const CommodityPrice = () => {
       if (state) url += `&filters[state]=${encodeURIComponent(state)}`;
       if (district) url += `&filters[district]=${encodeURIComponent(district)}`;
 
+      console.log(url, "url")
       const response = await axios.get(url);
       const data = response.data;
       console.log(data, "data");
@@ -255,8 +330,10 @@ const CommodityPrice = () => {
   };
 
   useEffect(() => {
-    fetchMarketData(filters);
-  }, []);
+    if (!filters.state) {
+      setDistricts([]);
+    }
+  }, [filters.state]);
 
   useEffect(() => {
     // Log marketData after it's updated
@@ -298,20 +375,31 @@ const CommodityPrice = () => {
               className="p-2 border rounded"
             >
               <option value="">Select State</option>
-              {/* Add options for states here */}
-            </select>
+            {statesOfIndia.map((state) => (
+              <option key={state.value} value={state.value}>
+                {state.key}
+              </option>
+            ))}
+          </select>
           </div>
           <div className="flex flex-col">
             <label htmlFor="district" className="text-lg font-medium text-neutral-700 dark:text-neutral-dark-700">District</label>
             <select
-              name="district"
-              value={filters.district}
-              onChange={handleInputChange}
-              className="p-2 border rounded"
-            >
-              <option value="">Select District</option>
-              {/* Add options for districts here */}
-            </select>
+  name="district"
+  value={filters.district}
+  onChange={handleInputChange}
+  className="p-2 border rounded"
+  disabled={!districts.length}
+>
+  <option value="">{districts.length ? "Select District" : "Select State First"}</option>
+  {districts.map((district) => (
+    <option key={district.id} value={district.id}>
+      {district.name} {/* Adjust based on your object structure */}
+    </option>
+  ))}
+</select>
+
+
           </div>
           <button
             onClick={handleSearch}

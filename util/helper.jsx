@@ -64,6 +64,26 @@ export const addBlog = async (blogData) => {
   }
 };
 
+export const fetchCitiesHelper = async (selectedState) => {
+  const API_KEY = process.env.NEXT_PUBLIC_LOCATION_API_KEY; // Your encoded API key
+  const apiUrl = process.env.NEXT_PUBLIC_LOCATION_API_URL; // Your encoded API key
+
+  try {
+    const response = await axios.get(`${apiUrl}/${selectedState}/cities`,{
+      headers: {
+        'X-CSCAPI-KEY': `${API_KEY}`
+      }
+    });
+    // console.log(JSON.stringify(response.data));
+    // console.log('Cities fetched:', response.data); // Debugging line
+    return response.data;
+  } catch (error) {
+    console.error('Error fetching cities:', error);
+    return [];
+  }
+};
+
+
 export const signinUser = async (body) => {
     console.log(body);
 const requestBody = {

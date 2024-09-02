@@ -54,27 +54,27 @@ export default function Login() {
             <div className="hidden lg:grid grid-cols-2 gap-4 items-stretch max-w-[580px]">
               <img
                 className="rounded-3xl w-full hover-up"
-                src="/assets/imgs/pages/img-32.png"
+                src="/assets/imgs/pages/signup1.jpg"
                 alt=""
               />
               <img
                 className="rounded-3xl w-full hover-up"
-                src="/assets/imgs/pages/img-33.png"
+                src="/assets/imgs/pages/signup2.jpg"
                 alt=""
               />
               <img
                 className="rounded-3xl w-full hover-up"
-                src="/assets/imgs/pages/img-34.png"
+                src="/assets/imgs/pages/signup3.jpg"
                 alt=""
               />
               <img
                 className="rounded-3xl w-full hover-up"
-                src="/assets/imgs/pages/img-35.png"
+                src="/assets/imgs/pages/signup4.jpg"
                 alt=""
               />
               <img
                 className="rounded-3xl w-full hover-up col-span-2"
-                src="/assets/imgs/pages/img-36.png"
+                src="/assets/imgs/pages/signup5.jpg"
                 alt=""
               />
             </div>
