@@ -64,7 +64,7 @@ export default async function Category3() {
                                         {/* </div> */}
                                     </div>
                                     {/* Featured box */}
-                                    <div className="flex flex-col gap-4">
+                                    {/* <div className="flex flex-col gap-4">
                                         <h4 className="text-2xl text-neutral-950 font-bold dark:text-neutral-dark-950">Featured <span className="font-light">Posts</span></h4>
                                         <div className="flex flex-col gap-6">
                                             <div className="w-full flex items-center gap-2.5  hover-up">
@@ -125,7 +125,7 @@ export default async function Category3() {
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
+                                    </div> */}
                                     {/* Category box */}
                                     <div className="flex flex-col gap-4">
                                         <h4 className="text-2xl text-neutral-950 dark:text-neutral-dark-950 font-bold">Explore <span className="font-light">Categories</span></h4>
