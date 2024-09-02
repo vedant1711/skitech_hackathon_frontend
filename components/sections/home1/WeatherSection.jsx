@@ -24,7 +24,7 @@ const WeatherDashboard = () => {
             lat,
             lon,
             lang: 'en',
-            appid: 'eb8413e9530ac148b816b9a95521e004',
+            appid: '1c87a7b44f2826d926408c029908e7d0',
             units: 'metric',
           },
         }
